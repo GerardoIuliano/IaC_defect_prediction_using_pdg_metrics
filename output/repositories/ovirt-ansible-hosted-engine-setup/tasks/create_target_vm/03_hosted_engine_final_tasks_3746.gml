@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d19" for="edge" attr.name="keyword" attr.type="string"/>
+<key id="d18" for="edge" attr.name="id" attr.type="string"/>
+<key id="d17" for="edge" attr.name="back" attr.type="string"/>
+<key id="d16" for="edge" attr.name="transitive" attr.type="string"/>
+<key id="d15" for="edge" attr.name="type" attr.type="string"/>
+<key id="d14" for="node" attr.name="non_idempotent_components" attr.type="string"/>
+<key id="d13" for="node" attr.name="expr" attr.type="string"/>
+<key id="d12" for="node" attr.name="identifier" attr.type="string"/>
+<key id="d11" for="node" attr.name="value" attr.type="string"/>
+<key id="d10" for="node" attr.name="type" attr.type="string"/>
+<key id="d9" for="node" attr.name="scope_level" attr.type="string"/>
+<key id="d8" for="node" attr.name="value_version" attr.type="string"/>
+<key id="d7" for="node" attr.name="version" attr.type="string"/>
+<key id="d6" for="node" attr.name="name" attr.type="string"/>
+<key id="d5" for="node" attr.name="action" attr.type="string"/>
+<key id="d4" for="node" attr.name="location" attr.type="string"/>
+<key id="d3" for="node" attr.name="node_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="node_type" attr.type="string"/>
+<key id="d1" for="graph" attr.name="role_version" attr.type="string"/>
+<key id="d0" for="graph" attr.name="role_name" attr.type="string"/>
+<graph edgedefault="directed"><data key="d0">{"path": "ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/03_hosted_engine_final_tasks.yml", "id" : "3746"}</data>
+<data key="d1">latest</data>
+<node id="3744">
+  <data key="d2">Task</data>
+  <data key="d3">3744</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/03_hosted_engine_final_tasks.yml", "line": 398, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/partial_execution.yml", "line": 97, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 6, "column": 3, "includer_location": null}}}</data>
+  <data key="d5">"debug"</data>
+  <data key="d6">""</data>
+</node>
+<node id="3746">
+  <data key="d2">Task</data>
+  <data key="d3">3746</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/03_hosted_engine_final_tasks.yml", "line": 399, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/partial_execution.yml", "line": 97, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 6, "column": 3, "includer_location": null}}}</data>
+  <data key="d5">"ovirt_vm_info"</data>
+  <data key="d6">"Wait for the local bootstrap VM to be down at engine eyes"</data>
+</node>
+<node id="3747">
+  <data key="d2">Variable</data>
+  <data key="d3">3747</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/03_hosted_engine_final_tasks.yml", "line": 403, "column": 19, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/partial_execution.yml", "line": 97, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 6, "column": 3, "includer_location": null}}}</data>
+  <data key="d6">"local_vm_status"</data>
+  <data key="d7">1</data>
+  <data key="d8">0</data>
+  <data key="d9">18</data>
+</node>
+<node id="3748">
+  <data key="d2">Task</data>
+  <data key="d3">3748</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/03_hosted_engine_final_tasks.yml", "line": 407, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/partial_execution.yml", "line": 97, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 6, "column": 3, "includer_location": null}}}</data>
+  <data key="d5">"debug"</data>
+  <data key="d6">""</data>
+</node>
+<node id="2">
+  <data key="d2">Variable</data>
+  <data key="d3">2</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/defaults/main.yml", "line": 12, "column": 1, "includer_location": null}</data>
+  <data key="d6">"he_vm_name"</data>
+  <data key="d7">0</data>
+  <data key="d8">0</data>
+  <data key="d9">1</data>
+</node>
+<node id="3">
+  <data key="d2">Literal</data>
+  <data key="d3">3</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/defaults/main.yml", "line": 12, "column": 13, "includer_location": null}</data>
+  <data key="d10">"str"</data>
+  <data key="d11">"HostedEngine"</data>
+</node>
+<node id="3403">
+  <data key="d2">Task</data>
+  <data key="d3">3403</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/01_create_target_hosted_engine_vm.yml", "line": 219, "column": 5, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/partial_execution.yml", "line": 88, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 6, "column": 3, "includer_location": null}}}</data>
+  <data key="d5">"debug"</data>
+  <data key="d6">""</data>
+</node>
+<node id="1612">
+  <data key="d2">IntermediateValue</data>
+  <data key="d3">1612</data>
+  <data key="d12">249</data>
+</node>
+<node id="3405">
+  <data key="d2">Task</data>
+  <data key="d3">3405</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/01_create_target_hosted_engine_vm.yml", "line": 220, "column": 5, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/partial_execution.yml", "line": 88, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 6, "column": 3, "includer_location": null}}}</data>
+  <data key="d5">"shell"</data>
+  <data key="d6">"Register external local VM uuid"</data>
+</node>
+<node id="3406">
+  <data key="d2">Variable</data>
+  <data key="d3">3406</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/01_create_target_hosted_engine_vm.yml", "line": 223, "column": 15, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/partial_execution.yml", "line": 88, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 6, "column": 3, "includer_location": null}}}</data>
+  <data key="d6">"external_local_vm_uuid"</data>
+  <data key="d7">1</data>
+  <data key="d8">0</data>
+  <data key="d9">18</data>
+</node>
+<node id="1611">
+  <data key="d2">Expression</data>
+  <data key="d3">1611</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/full_execution.yml", "line": 57, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 2, "column": 3, "includer_location": null}}}</data>
+  <data key="d13">"virsh -r domuuid {{ he_vm_name }}Local | head -1"</data>
+  <data key="d14">[]</data>
+</node>
+<node id="3737">
+  <data key="d2">IntermediateValue</data>
+  <data key="d3">3737</data>
+  <data key="d12">546</data>
+</node>
+<node id="3736">
+  <data key="d2">Expression</data>
+  <data key="d3">3736</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/create_target_vm/03_hosted_engine_final_tasks.yml", "line": 386, "column": 16, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/partial_execution.yml", "line": 97, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 6, "column": 3, "includer_location": null}}}</data>
+  <data key="d13">"id=\"{{ external_local_vm_uuid.stdout_lines|first }}\""</data>
+  <data key="d14">[]</data>
+</node>
+<node id="1145">
+  <data key="d2">Expression</data>
+  <data key="d3">1145</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/bootstrap_local_vm/05_add_host.yml", "line": 56, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/full_execution.yml", "line": 53, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 2, "column": 3, "includer_location": null}}}</data>
+  <data key="d13">"{{ ovirt_auth }}"</data>
+  <data key="d14">[]</data>
+</node>
+<node id="1146">
+  <data key="d2">IntermediateValue</data>
+  <data key="d3">1146</data>
+  <data key="d12">166</data>
+</node>
+<node id="1144">
+  <data key="d2">Variable</data>
+  <data key="d3">1144</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/full_execution.yml", "line": 53, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ovirt-ansible-hosted-engine-setup/tasks/main.yml", "line": 2, "column": 3, "includer_location": null}}}</data>
+  <data key="d6">"ovirt_auth"</data>
+  <data key="d7">0</data>
+  <data key="d8">0</data>
+  <data key="d9">0</data>
+</node>
+<edge source="3744" target="3746">
+  <data key="d15">ORDER</data>
+  <data key="d16">false</data>
+  <data key="d17">false</data>
+  <data key="d18">3744-3746-0</data>
+</edge>
+<edge source="3746" target="3747">
+  <data key="d15">DEF</data>
+  <data key="d18">3746-3747-0</data>
+</edge>
+<edge source="3746" target="3748">
+  <data key="d15">ORDER</data>
+  <data key="d16">false</data>
+  <data key="d17">false</data>
+  <data key="d18">3746-3748-0</data>
+</edge>
+<edge source="2" target="1611">
+  <data key="d15">USE</data>
+  <data key="d18">2-1611-0</data>
+</edge>
+<edge source="3" target="2">
+  <data key="d15">DEF</data>
+  <data key="d18">3-2-0</data>
+</edge>
+<edge source="3403" target="3405">
+  <data key="d15">ORDER</data>
+  <data key="d16">false</data>
+  <data key="d17">false</data>
+  <data key="d18">3403-3405-0</data>
+</edge>
+<edge source="1612" target="3405">
+  <data key="d15">KEYWORD</data>
+  <data key="d19">"args._raw_params"</data>
+  <data key="d18">1612-3405-0</data>
+</edge>
+<edge source="3405" target="3406">
+  <data key="d15">DEF</data>
+  <data key="d18">3405-3406-0</data>
+</edge>
+<edge source="3406" target="3736">
+  <data key="d15">USE</data>
+  <data key="d18">3406-3736-0</data>
+</edge>
+<edge source="1611" target="1612">
+  <data key="d15">DEF</data>
+  <data key="d18">1611-1612-0</data>
+</edge>
+<edge source="3737" target="3746">
+  <data key="d15">KEYWORD</data>
+  <data key="d19">"args.pattern"</data>
+  <data key="d18">3737-3746-0</data>
+</edge>
+<edge source="3736" target="3737">
+  <data key="d15">DEF</data>
+  <data key="d18">3736-3737-0</data>
+</edge>
+<edge source="1145" target="1146">
+  <data key="d15">DEF</data>
+  <data key="d18">1145-1146-0</data>
+</edge>
+<edge source="1146" target="3746">
+  <data key="d15">KEYWORD</data>
+  <data key="d19">"args.auth"</data>
+  <data key="d18">1146-3746-0</data>
+</edge>
+<edge source="1144" target="1145">
+  <data key="d15">USE</data>
+  <data key="d18">1144-1145-0</data>
+</edge>
+</graph></graphml>
