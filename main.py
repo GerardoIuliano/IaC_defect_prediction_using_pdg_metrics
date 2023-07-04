@@ -67,7 +67,7 @@ def extract_pdg_task_level_from_repo(repoName):
         print(repoPath," has't the same file of original study")
     
 _, GOOD_REPOS_NAME  = pi.repo_with_graph("graphml")
-repoName = "ansible-consul"
+repoName = "RHEL7-STIG"
 
 # Il risultato viene salvato in ./output/repositories/repoName/filelocation
 extract_pdg_task_level_from_repo(repoName=repoName)
