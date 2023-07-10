@@ -11,14 +11,13 @@ import csv
 import json
 import os
 
-CURRENT_DIR = os.path.dirname(__file__) #<-- absolute dir the script is in
-OUTPUT_DIR = "\\output\\"
+OUTPUT_DIR = ".\\output\\"
 REPO_DICTIONARY = pp.getRepoDictionary()
 rows = []
 
 #nome del file CSV
 nome_file_csv = "task_metrics.csv"
-csv_file_path = CURRENT_DIR+OUTPUT_DIR+nome_file_csv
+csv_file_path = OUTPUT_DIR+nome_file_csv
 
 # Apri il file CSV in modalità scrittura
 with open(csv_file_path, mode="w", newline="") as file_csv:

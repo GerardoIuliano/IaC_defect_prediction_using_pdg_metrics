@@ -13,8 +13,7 @@ import os
 
 def extract_pdg_task_level_from_repo(repoName):
 
-    CURRENT_DIR = os.path.dirname(__file__) #<-- absolute dir the script is in
-    OUTPUT_DIR = "\\output\\repositories\\"
+    OUTPUT_DIR = ".\\output\\repositories\\"
     FILES_PATH = fp.getAllFilesPaths()
     REPO_DICTIONARY = pp.getRepoDictionary()
 
@@ -51,11 +50,11 @@ def extract_pdg_task_level_from_repo(repoName):
                     # la cartella di destinazione segue lo stesso path del file .yml che contiene il task
                     # la directory tree viene mantenuta uguale a quella della repository di input
                     try:
-                        os.makedirs(CURRENT_DIR+OUTPUT_DIR+dir_path)
+                        os.makedirs(OUTPUT_DIR+dir_path)
                     except Exception as e:
                         1==1
 
-                    destination = CURRENT_DIR+OUTPUT_DIR+dir_path+"\\"+file_name+"_"+str(taskNodeId)+".gml"
+                    destination = OUTPUT_DIR+dir_path+"\\"+file_name+"_"+str(taskNodeId)+".gml"
                     print("SAVING ---",dir_path+"\\"+file_name+"_"+str(taskNodeId)+".gml")
                     i=i+1
                     roleName = dir_path+"/"+file_name+".yml"

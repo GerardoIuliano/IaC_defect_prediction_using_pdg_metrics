@@ -38,7 +38,7 @@ def taskCount(PDG_list):
     role = pdg.graph["role_name"]
     role = json.loads(role)
     filePath = role["path"]
-    path = os.path.dirname(__file__)+"/input/repositories/"+filePath
+    path = "./input/repositories/"+filePath
     path = path.replace("/","\\")
     return count_ansible_tasks(path)
 
@@ -75,7 +75,7 @@ def taskSize(PDG_list):
     role = pdg.graph["role_name"]
     role = json.loads(role)
     filePath = role["path"]
-    path = os.path.dirname(__file__)+"/input/repositories/"+filePath
+    path = "./input/repositories/"+filePath
     path = path.replace("/","\\")
 
     k = taskCount(PDG_list)
@@ -102,7 +102,7 @@ def taskCoverage(PDG_list):
     role = pdg.graph["role_name"]
     role = json.loads(role)
     filePath = role["path"]
-    path = os.path.dirname(__file__)+"/input/repositories/"+filePath
+    path = "./input/repositories/"+filePath
     path = path.replace("/","\\")
 
     taskSizes = taskSize(PDG_list)

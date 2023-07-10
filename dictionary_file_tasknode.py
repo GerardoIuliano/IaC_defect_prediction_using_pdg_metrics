@@ -14,9 +14,8 @@ def getDict__file_tasknode(repositoryPath):
     data = pd.read_csv('./input/ansible.csv')
     rows = data[["filepath","repository"]]
     filepath = set(rows[rows.repository==repositoryPath].filepath)
-    script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
-    rel_path = "\\input\\repositories\\"
-    G = wr.read_graphml(script_dir+rel_path+repositoryName+"\\PDG\\graphml.txt", node_type=int)
+    rel_path = ".\\input\\repositories\\"
+    G = wr.read_graphml(rel_path+repositoryName+"\\PDG\\graphml.txt", node_type=int)
     dict_file_node = {}
     for i in range(0,len(G.nodes)):
         try:
