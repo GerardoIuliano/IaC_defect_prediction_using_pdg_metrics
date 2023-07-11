@@ -64,7 +64,3 @@ def extract_pdg_task_level_from_repo(repoName):
                     wr.write_graphml(SUB_PDG, destination)
     else:
         print(repoPath," has't the same file of original study")
-    
-""" for i in range(0,len(GOOD_REPOS_NAME)):
-    print("Repository:",GOOD_REPOS_NAME[i])
-    extract_pdg_task_level_from_repo(repoName=GOOD_REPOS_NAME[i]) """

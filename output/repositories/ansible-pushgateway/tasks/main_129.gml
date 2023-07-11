@@ -24,67 +24,53 @@
 <node id="129">
   <data key="d2">Task</data>
   <data key="d3">129</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 28, "column": 3, "includer_location": null}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}</data>
   <data key="d5">"systemd"</data>
   <data key="d6">"Ensure pushgateway is enabled on boot"</data>
 </node>
 <node id="130">
   <data key="d2">Literal</data>
   <data key="d3">130</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
-  <data key="d7">"bool"</data>
-  <data key="d8">true</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 27, "column": 11, "includer_location": null}</data>
+  <data key="d7">"str"</data>
+  <data key="d8">"pushgateway"</data>
 </node>
 <node id="131">
   <data key="d2">Literal</data>
   <data key="d3">131</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 32, "column": 11, "includer_location": null}</data>
-  <data key="d7">"str"</data>
-  <data key="d8">"pushgateway"</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
+  <data key="d7">"bool"</data>
+  <data key="d8">true</data>
 </node>
 <node id="132">
   <data key="d2">Literal</data>
   <data key="d3">132</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 33, "column": 12, "includer_location": null}</data>
-  <data key="d7">"str"</data>
-  <data key="d8">"started"</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
+  <data key="d7">"bool"</data>
+  <data key="d8">true</data>
 </node>
 <node id="133">
-  <data key="d2">Literal</data>
-  <data key="d3">133</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
-  <data key="d7">"bool"</data>
-  <data key="d8">true</data>
-</node>
-<node id="134">
-  <data key="d2">Literal</data>
-  <data key="d3">134</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
-  <data key="d7">"bool"</data>
-  <data key="d8">true</data>
-</node>
-<node id="135">
   <data key="d2">Conditional</data>
-  <data key="d3">135</data>
+  <data key="d3">133</data>
 </node>
 <node id="109">
   <data key="d2">Task</data>
   <data key="d3">109</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 11, "column": 5, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 23, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 11, "column": 5, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
   <data key="d5">"file"</data>
   <data key="d6">"Create persistence file"</data>
 </node>
 <node id="115">
   <data key="d2">Task</data>
   <data key="d3">115</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 22, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 23, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 22, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
   <data key="d5">"seport"</data>
   <data key="d6">"Allow pushgateway port in SELinux on RedHat OS family"</data>
 </node>
 <node id="116">
   <data key="d2">Variable</data>
   <data key="d3">116</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 23, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
   <data key="d6">"ansible_version"</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
@@ -93,7 +79,7 @@
 <node id="117">
   <data key="d2">Expression</data>
   <data key="d3">117</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 29, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 23, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 29, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
   <data key="d12">"ansible_version.full is version_compare('2.4', '&gt;=')"</data>
   <data key="d13">[]</data>
 </node>
@@ -105,12 +91,12 @@
 <node id="119">
   <data key="d2">Conditional</data>
   <data key="d3">119</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 29, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 23, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 29, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
 </node>
 <node id="120">
   <data key="d2">Variable</data>
   <data key="d3">120</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 23, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
   <data key="d6">"ansible_selinux"</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
@@ -119,7 +105,7 @@
 <node id="121">
   <data key="d2">Expression</data>
   <data key="d3">121</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 30, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 23, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 30, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
   <data key="d12">"ansible_selinux.status == \"enabled\""</data>
   <data key="d13">[]</data>
 </node>
@@ -131,38 +117,28 @@
 <node id="123">
   <data key="d2">Conditional</data>
   <data key="d3">123</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 30, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 23, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/configure.yml", "line": 30, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-pushgateway/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
 </node>
-<edge source="129" target="135">
+<edge source="129" target="133">
   <data key="d15">ORDER</data>
   <data key="d16">false</data>
   <data key="d17">false</data>
-  <data key="d18">129-135-0</data>
+  <data key="d18">129-133-0</data>
 </edge>
 <edge source="130" target="129">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.daemon_reload"</data>
+  <data key="d19">"args.name"</data>
   <data key="d18">130-129-0</data>
 </edge>
 <edge source="131" target="129">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.name"</data>
+  <data key="d19">"args.enabled"</data>
   <data key="d18">131-129-0</data>
 </edge>
 <edge source="132" target="129">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.state"</data>
-  <data key="d18">132-129-0</data>
-</edge>
-<edge source="133" target="129">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.enabled"</data>
-  <data key="d18">133-129-0</data>
-</edge>
-<edge source="134" target="129">
-  <data key="d15">KEYWORD</data>
   <data key="d19">"become"</data>
-  <data key="d18">134-129-0</data>
+  <data key="d18">132-129-0</data>
 </edge>
 <edge source="109" target="119">
   <data key="d15">ORDER</data>

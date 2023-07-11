@@ -4,10 +4,10 @@
 <key id="d17" for="edge" attr.name="transitive" attr.type="string"/>
 <key id="d16" for="edge" attr.name="id" attr.type="string"/>
 <key id="d15" for="edge" attr.name="type" attr.type="string"/>
-<key id="d14" for="node" attr.name="identifier" attr.type="string"/>
-<key id="d13" for="node" attr.name="non_idempotent_components" attr.type="string"/>
-<key id="d12" for="node" attr.name="expr" attr.type="string"/>
-<key id="d11" for="node" attr.name="action" attr.type="string"/>
+<key id="d14" for="node" attr.name="action" attr.type="string"/>
+<key id="d13" for="node" attr.name="identifier" attr.type="string"/>
+<key id="d12" for="node" attr.name="non_idempotent_components" attr.type="string"/>
+<key id="d11" for="node" attr.name="expr" attr.type="string"/>
 <key id="d10" for="node" attr.name="value" attr.type="string"/>
 <key id="d9" for="node" attr.name="type" attr.type="string"/>
 <key id="d8" for="node" attr.name="scope_level" attr.type="string"/>
@@ -21,163 +21,165 @@
 <key id="d0" for="graph" attr.name="role_name" attr.type="string"/>
 <graph edgedefault="directed"><data key="d0">{"path": "ansible-beats/tasks/beats-debian.yml", "id" : "54"}</data>
 <data key="d1">latest</data>
-<node id="64">
-  <data key="d2">Conditional</data>
-  <data key="d3">64</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 25, "column": 7, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
-</node>
-<node id="6">
+<node id="4">
   <data key="d2">Variable</data>
-  <data key="d3">6</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/defaults/main.yml", "line": 6, "column": 1, "includer_location": null}</data>
+  <data key="d3">4</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/defaults/main.yml", "line": 6, "column": 1, "includer_location": null}</data>
   <data key="d5">"use_repository"</data>
   <data key="d6">0</data>
   <data key="d7">0</data>
   <data key="d8">1</data>
 </node>
-<node id="7">
+<node id="5">
   <data key="d2">Literal</data>
-  <data key="d3">7</data>
+  <data key="d3">5</data>
   <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
   <data key="d9">"bool"</data>
   <data key="d10">true</data>
 </node>
-<node id="53">
+<node id="43">
+  <data key="d2">Expression</data>
+  <data key="d3">43</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 5, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
+  <data key="d11">"use_repository"</data>
+  <data key="d12">[]</data>
+</node>
+<node id="44">
+  <data key="d2">IntermediateValue</data>
+  <data key="d3">44</data>
+  <data key="d13">4</data>
+</node>
+<node id="50">
+  <data key="d2">Task</data>
+  <data key="d3">50</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 9, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
+  <data key="d14">"apt_key"</data>
+  <data key="d5">"Debian - Add Beats repository key"</data>
+</node>
+<node id="51">
   <data key="d2">Conditional</data>
-  <data key="d3">53</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 6, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
+  <data key="d3">51</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 11, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
 </node>
 <node id="54">
   <data key="d2">Task</data>
   <data key="d3">54</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 2, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
-  <data key="d11">"apt"</data>
-  <data key="d5">"Debian - Ensure apt-transport-https is installed"</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 13, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
+  <data key="d14">"apt_repository"</data>
+  <data key="d5">"Debian - add beats repository"</data>
 </node>
 <node id="55">
-  <data key="d2">Expression</data>
+  <data key="d2">Conditional</data>
   <data key="d3">55</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 8, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
-  <data key="d12">"use_repository | bool"</data>
-  <data key="d13">[]</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 15, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
 </node>
 <node id="56">
-  <data key="d2">IntermediateValue</data>
+  <data key="d2">Variable</data>
   <data key="d3">56</data>
-  <data key="d14">6</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
+  <data key="d5">"repo_url"</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">0</data>
 </node>
 <node id="57">
-  <data key="d2">Conditional</data>
+  <data key="d2">Expression</data>
   <data key="d3">57</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 8, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
+  <data key="d11">"deb {{ repo_url }} stable main"</data>
+  <data key="d12">[]</data>
 </node>
 <node id="58">
-  <data key="d2">Literal</data>
+  <data key="d2">IntermediateValue</data>
   <data key="d3">58</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 5, "column": 11, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
-  <data key="d9">"str"</data>
-  <data key="d10">"apt-transport-https"</data>
+  <data key="d13">5</data>
 </node>
 <node id="59">
   <data key="d2">Literal</data>
   <data key="d3">59</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 6, "column": 12, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
   <data key="d9">"str"</data>
   <data key="d10">"present"</data>
 </node>
 <node id="60">
-  <data key="d2">Literal</data>
+  <data key="d2">Task</data>
   <data key="d3">60</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
-  <data key="d9">"int"</data>
-  <data key="d10">86400</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 17, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/ansible-beats/tasks/main.yml", "line": 10, "column": 3, "includer_location": null}}}</data>
+  <data key="d14">"command"</data>
+  <data key="d5">"Debian - unhold {{beat}} version for install"</data>
 </node>
-<node id="61">
-  <data key="d2">Variable</data>
-  <data key="d3">61</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats-debian.yml", "line": 9, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
-  <data key="d5">"beat_install"</data>
-  <data key="d6">0</data>
-  <data key="d7">0</data>
-  <data key="d8">18</data>
-</node>
-<node id="62">
-  <data key="d2">Literal</data>
-  <data key="d3">62</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/beats.yml", "line": 4, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/ansible-beats/tasks/main.yml", "line": 14, "column": 3, "includer_location": null}}}</data>
-  <data key="d9">"bool"</data>
-  <data key="d10">true</data>
-</node>
-<edge source="6" target="55">
+<edge source="4" target="43">
   <data key="d15">USE</data>
-  <data key="d16">6-55-0</data>
+  <data key="d16">4-43-0</data>
 </edge>
-<edge source="7" target="6">
+<edge source="5" target="4">
   <data key="d15">DEF</data>
-  <data key="d16">7-6-0</data>
+  <data key="d16">5-4-0</data>
 </edge>
-<edge source="53" target="57">
+<edge source="43" target="44">
+  <data key="d15">DEF</data>
+  <data key="d16">43-44-0</data>
+</edge>
+<edge source="44" target="51">
+  <data key="d15">USE</data>
+  <data key="d16">44-51-0</data>
+</edge>
+<edge source="44" target="55">
+  <data key="d15">USE</data>
+  <data key="d16">44-55-0</data>
+</edge>
+<edge source="50" target="55">
   <data key="d15">ORDER</data>
   <data key="d17">false</data>
   <data key="d18">false</data>
-  <data key="d16">53-57-0</data>
+  <data key="d16">50-55-0</data>
 </edge>
-<edge source="53" target="61">
-  <data key="d15">DEFINEDIF</data>
-  <data key="d16">53-61-0</data>
-</edge>
-<edge source="54" target="61">
-  <data key="d15">DEF</data>
-  <data key="d16">54-61-0</data>
-</edge>
-<edge source="54" target="64">
+<edge source="51" target="50">
   <data key="d15">ORDER</data>
   <data key="d17">false</data>
   <data key="d18">false</data>
-  <data key="d16">54-64-0</data>
+  <data key="d16">51-50-0</data>
 </edge>
-<edge source="55" target="56">
-  <data key="d15">DEF</data>
-  <data key="d16">55-56-0</data>
+<edge source="51" target="55">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">51-55-0</data>
+</edge>
+<edge source="54" target="60">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">54-60-0</data>
+</edge>
+<edge source="55" target="54">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">55-54-0</data>
+</edge>
+<edge source="55" target="60">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">55-60-0</data>
 </edge>
 <edge source="56" target="57">
   <data key="d15">USE</data>
   <data key="d16">56-57-0</data>
 </edge>
-<edge source="56" target="64">
-  <data key="d15">USE</data>
-  <data key="d16">56-64-0</data>
-</edge>
-<edge source="57" target="54">
-  <data key="d15">ORDER</data>
-  <data key="d17">false</data>
-  <data key="d18">false</data>
-  <data key="d16">57-54-0</data>
-</edge>
-<edge source="57" target="64">
-  <data key="d15">ORDER</data>
-  <data key="d17">false</data>
-  <data key="d18">false</data>
-  <data key="d16">57-64-0</data>
+<edge source="57" target="58">
+  <data key="d15">DEF</data>
+  <data key="d16">57-58-0</data>
 </edge>
 <edge source="58" target="54">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.name"</data>
+  <data key="d19">"args.repo"</data>
   <data key="d16">58-54-0</data>
 </edge>
 <edge source="59" target="54">
   <data key="d15">KEYWORD</data>
   <data key="d19">"args.state"</data>
   <data key="d16">59-54-0</data>
-</edge>
-<edge source="60" target="54">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.cache_valid_time"</data>
-  <data key="d16">60-54-0</data>
-</edge>
-<edge source="62" target="54">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"become"</data>
-  <data key="d16">62-54-0</data>
 </edge>
 </graph></graphml>

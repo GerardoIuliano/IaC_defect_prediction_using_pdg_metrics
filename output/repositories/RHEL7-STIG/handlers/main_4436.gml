@@ -24,7 +24,7 @@
 <node id="609">
   <data key="d2">Variable</data>
   <data key="d3">609</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 485, "column": 1, "includer_location": null}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 485, "column": 1, "includer_location": null}</data>
   <data key="d5">"rhel7stig_aide_temp_db_file"</data>
   <data key="d6">0</data>
   <data key="d7">0</data>
@@ -33,7 +33,7 @@
 <node id="610">
   <data key="d2">Literal</data>
   <data key="d3">610</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 485, "column": 30, "includer_location": null}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 485, "column": 30, "includer_location": null}</data>
   <data key="d9">"str"</data>
   <data key="d10">"/var/lib/aide/aide.db.new.gz"</data>
 </node>
@@ -44,7 +44,7 @@
 <node id="4429">
   <data key="d2">Loop</data>
   <data key="d3">4429</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/handlers/main.yml", "line": 79, "column": 7, "includer_location": null}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/handlers/main.yml", "line": 79, "column": 7, "includer_location": null}</data>
 </node>
 <node id="4435">
   <data key="d2">Conditional</data>
@@ -53,7 +53,7 @@
 <node id="4436">
   <data key="d2">Task</data>
   <data key="d3">4436</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/handlers/main.yml", "line": 82, "column": 3, "includer_location": null}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/handlers/main.yml", "line": 82, "column": 3, "includer_location": null}</data>
   <data key="d11">"ansible.builtin.shell"</data>
   <data key="d5">"init aide and wait"</data>
 </node>

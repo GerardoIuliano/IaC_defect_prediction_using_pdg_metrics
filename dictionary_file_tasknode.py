@@ -39,7 +39,7 @@ def getDict__file_taskPDG(repositoryName):
     dict_file_tasknode = df.getDict__file_tasknode(REPO_DICTIONARY[repositoryName])
     dict_file_taskPDG = {}
     for key in dict_file_tasknode.keys():
-        filePath= key[0:key.find(".")]
+        filePath= key[0:key.rfind(".")]
         for nodeId in dict_file_tasknode[key]:
             G = pi.getTaskPDG(repositoryName, filePath, nodeId)
             if(key in dict_file_taskPDG.keys()):

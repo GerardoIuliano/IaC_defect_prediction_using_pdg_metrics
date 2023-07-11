@@ -21,109 +21,124 @@
 <key id="d0" for="graph" attr.name="role_name" attr.type="string"/>
 <graph edgedefault="directed"><data key="d0">{"path": "Ubuntu1804-CIS/tasks/section2.yml", "id" : "1717"}</data>
 <data key="d1">latest</data>
-<node id="620">
+<node id="1729">
+  <data key="d2">Conditional</data>
+  <data key="d3">1729</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 719, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 29, "column": 3, "includer_location": null}}</data>
+</node>
+<node id="198">
   <data key="d2">Variable</data>
-  <data key="d3">620</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/defaults/main.yml", "line": 363, "column": 1, "includer_location": null}</data>
-  <data key="d5">"ubuntu1804cis_time_synchronization"</data>
+  <data key="d3">198</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/defaults/main.yml", "line": 112, "column": 1, "includer_location": null}</data>
+  <data key="d5">"ubuntu1804cis_rule_2_3_4"</data>
   <data key="d6">0</data>
   <data key="d7">0</data>
   <data key="d8">1</data>
 </node>
-<node id="621">
+<node id="199">
   <data key="d2">Literal</data>
-  <data key="d3">621</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/defaults/main.yml", "line": 363, "column": 37, "includer_location": null}</data>
-  <data key="d9">"str"</data>
-  <data key="d10">"chrony"</data>
-</node>
-<node id="1712">
-  <data key="d2">Task</data>
-  <data key="d3">1712</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 295, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 30, "column": 3, "includer_location": null}}</data>
-  <data key="d11">"apt"</data>
-  <data key="d5">"SCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service install"</data>
-</node>
-<node id="1713">
-  <data key="d2">Expression</data>
-  <data key="d3">1713</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 297, "column": 19, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 30, "column": 3, "includer_location": null}}</data>
-  <data key="d12">"{{ ubuntu1804cis_time_synchronization }}"</data>
-  <data key="d13">[]</data>
-</node>
-<node id="1714">
-  <data key="d2">IntermediateValue</data>
-  <data key="d3">1714</data>
-  <data key="d14">139</data>
+  <data key="d3">199</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
+  <data key="d9">"bool"</data>
+  <data key="d10">true</data>
 </node>
 <node id="1717">
   <data key="d2">Task</data>
   <data key="d3">1717</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 301, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 30, "column": 3, "includer_location": null}}</data>
-  <data key="d11">"service"</data>
-  <data key="d5">"SCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service start"</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 701, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 29, "column": 3, "includer_location": null}}</data>
+  <data key="d11">"apt"</data>
+  <data key="d5">"SCORED | 2.3.4 | PATCH | Ensure telnet client is not installed"</data>
 </node>
-<node id="1718">
-  <data key="d2">Literal</data>
-  <data key="d3">1718</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 304, "column": 20, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 30, "column": 3, "includer_location": null}}</data>
-  <data key="d9">"str"</data>
-  <data key="d10">"started"</data>
+<node id="1720">
+  <data key="d2">Conditional</data>
+  <data key="d3">1720</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 706, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 29, "column": 3, "includer_location": null}}</data>
 </node>
-<node id="1719">
-  <data key="d2">Literal</data>
-  <data key="d3">1719</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 30, "column": 3, "includer_location": null}}</data>
-  <data key="d9">"bool"</data>
-  <data key="d10">true</data>
+<node id="1721">
+  <data key="d2">Expression</data>
+  <data key="d3">1721</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 707, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 29, "column": 3, "includer_location": null}}</data>
+  <data key="d12">"ubuntu1804cis_rule_2_3_4"</data>
+  <data key="d13">[]</data>
+</node>
+<node id="1722">
+  <data key="d2">IntermediateValue</data>
+  <data key="d3">1722</data>
+  <data key="d14">182</data>
 </node>
 <node id="1723">
   <data key="d2">Conditional</data>
   <data key="d3">1723</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 313, "column": 15, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 30, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 707, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 29, "column": 3, "includer_location": null}}</data>
 </node>
-<edge source="620" target="1713">
+<node id="1724">
+  <data key="d2">Literal</data>
+  <data key="d3">1724</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 703, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 29, "column": 3, "includer_location": null}}</data>
+  <data key="d9">"str"</data>
+  <data key="d10">"telnet"</data>
+</node>
+<node id="1725">
+  <data key="d2">Literal</data>
+  <data key="d3">1725</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section2.yml", "line": 704, "column": 14, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 29, "column": 3, "includer_location": null}}</data>
+  <data key="d9">"str"</data>
+  <data key="d10">"absent"</data>
+</node>
+<edge source="198" target="1721">
   <data key="d15">USE</data>
-  <data key="d16">620-1713-0</data>
+  <data key="d16">198-1721-0</data>
 </edge>
-<edge source="621" target="620">
+<edge source="199" target="198">
   <data key="d15">DEF</data>
-  <data key="d16">621-620-0</data>
+  <data key="d16">199-198-0</data>
 </edge>
-<edge source="1712" target="1717">
+<edge source="1717" target="1729">
   <data key="d15">ORDER</data>
   <data key="d17">false</data>
   <data key="d18">false</data>
-  <data key="d16">1712-1717-0</data>
+  <data key="d16">1717-1729-0</data>
 </edge>
-<edge source="1713" target="1714">
-  <data key="d15">DEF</data>
-  <data key="d16">1713-1714-0</data>
-</edge>
-<edge source="1714" target="1712">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.name"</data>
-  <data key="d16">1714-1712-0</data>
-</edge>
-<edge source="1714" target="1717">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.name"</data>
-  <data key="d16">1714-1717-0</data>
-</edge>
-<edge source="1717" target="1723">
+<edge source="1720" target="1723">
   <data key="d15">ORDER</data>
   <data key="d17">false</data>
   <data key="d18">false</data>
-  <data key="d16">1717-1723-0</data>
+  <data key="d16">1720-1723-0</data>
 </edge>
-<edge source="1718" target="1717">
+<edge source="1720" target="1729">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">1720-1729-0</data>
+</edge>
+<edge source="1721" target="1722">
+  <data key="d15">DEF</data>
+  <data key="d16">1721-1722-0</data>
+</edge>
+<edge source="1722" target="1723">
+  <data key="d15">USE</data>
+  <data key="d16">1722-1723-0</data>
+</edge>
+<edge source="1723" target="1717">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">1723-1717-0</data>
+</edge>
+<edge source="1723" target="1729">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">1723-1729-0</data>
+</edge>
+<edge source="1724" target="1717">
+  <data key="d15">KEYWORD</data>
+  <data key="d19">"args.name"</data>
+  <data key="d16">1724-1717-0</data>
+</edge>
+<edge source="1725" target="1717">
   <data key="d15">KEYWORD</data>
   <data key="d19">"args.state"</data>
-  <data key="d16">1718-1717-0</data>
-</edge>
-<edge source="1719" target="1717">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.enabled"</data>
-  <data key="d16">1719-1717-0</data>
+  <data key="d16">1725-1717-0</data>
 </edge>
 </graph></graphml>

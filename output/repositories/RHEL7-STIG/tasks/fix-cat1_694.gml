@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d19" for="edge" attr.name="keyword" attr.type="string"/>
+<key id="d18" for="edge" attr.name="back" attr.type="string"/>
+<key id="d17" for="edge" attr.name="transitive" attr.type="string"/>
+<key id="d16" for="edge" attr.name="id" attr.type="string"/>
+<key id="d15" for="edge" attr.name="type" attr.type="string"/>
+<key id="d14" for="node" attr.name="identifier" attr.type="string"/>
+<key id="d13" for="node" attr.name="non_idempotent_components" attr.type="string"/>
+<key id="d12" for="node" attr.name="expr" attr.type="string"/>
+<key id="d11" for="node" attr.name="action" attr.type="string"/>
+<key id="d10" for="node" attr.name="value" attr.type="string"/>
+<key id="d9" for="node" attr.name="type" attr.type="string"/>
+<key id="d8" for="node" attr.name="scope_level" attr.type="string"/>
+<key id="d7" for="node" attr.name="value_version" attr.type="string"/>
+<key id="d6" for="node" attr.name="version" attr.type="string"/>
+<key id="d5" for="node" attr.name="name" attr.type="string"/>
+<key id="d4" for="node" attr.name="location" attr.type="string"/>
+<key id="d3" for="node" attr.name="node_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="node_type" attr.type="string"/>
+<key id="d1" for="graph" attr.name="role_version" attr.type="string"/>
+<key id="d0" for="graph" attr.name="role_name" attr.type="string"/>
+<graph edgedefault="directed"><data key="d0">{"path": "RHEL7-STIG/tasks/fix-cat1.yml", "id" : "694"}</data>
+<data key="d1">latest</data>
+<node id="34">
+  <data key="d2">Variable</data>
+  <data key="d3">34</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 24, "column": 1, "includer_location": null}</data>
+  <data key="d5">"rhel_07_020210"</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+</node>
+<node id="35">
+  <data key="d2">Literal</data>
+  <data key="d3">35</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
+  <data key="d9">"bool"</data>
+  <data key="d10">true</data>
+</node>
+<node id="36">
+  <data key="d2">Variable</data>
+  <data key="d3">36</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 25, "column": 1, "includer_location": null}</data>
+  <data key="d5">"rhel_07_020220"</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+</node>
+<node id="37">
+  <data key="d2">Literal</data>
+  <data key="d3">37</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
+  <data key="d9">"bool"</data>
+  <data key="d10">true</data>
+</node>
+<node id="686">
+  <data key="d2">Task</data>
+  <data key="d3">686</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat1.yml", "line": 176, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 48, "column": 3, "includer_location": null}}</data>
+  <data key="d11">"lineinfile"</data>
+  <data key="d5">"HIGH | RHEL-07-020070 | PATCH | The operating system must prevent the installation of software, patches, service packs, device drivers, or operating system components of packages without verification of the repository metadata."</data>
+</node>
+<node id="689">
+  <data key="d2">Conditional</data>
+  <data key="d3">689</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat1.yml", "line": 182, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 48, "column": 3, "includer_location": null}}</data>
+</node>
+<node id="694">
+  <data key="d2">Task</data>
+  <data key="d3">694</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat1.yml", "line": 190, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 48, "column": 3, "includer_location": null}}</data>
+  <data key="d11">"selinux"</data>
+  <data key="d5">"\n\"HIGH | RHEL-07-020210 | PATCH | The operating system must enable SELinux.\"\n\"HIGH | RHEL-07-020220 | PATCH | The operating system must enable the SELinux targeted policy.\"\n"</data>
+</node>
+<node id="695">
+  <data key="d2">Expression</data>
+  <data key="d3">695</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat1.yml", "line": 197, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 48, "column": 3, "includer_location": null}}</data>
+  <data key="d12">"rhel_07_020210 or rhel_07_020220"</data>
+  <data key="d13">[]</data>
+</node>
+<node id="696">
+  <data key="d2">IntermediateValue</data>
+  <data key="d3">696</data>
+  <data key="d14">30</data>
+</node>
+<node id="697">
+  <data key="d2">Conditional</data>
+  <data key="d3">697</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat1.yml", "line": 197, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 48, "column": 3, "includer_location": null}}</data>
+</node>
+<node id="698">
+  <data key="d2">Literal</data>
+  <data key="d3">698</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat1.yml", "line": 195, "column": 14, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 48, "column": 3, "includer_location": null}}</data>
+  <data key="d9">"str"</data>
+  <data key="d10">"enforcing"</data>
+</node>
+<node id="699">
+  <data key="d2">Literal</data>
+  <data key="d3">699</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat1.yml", "line": 196, "column": 15, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 48, "column": 3, "includer_location": null}}</data>
+  <data key="d9">"str"</data>
+  <data key="d10">"targeted"</data>
+</node>
+<node id="703">
+  <data key="d2">Conditional</data>
+  <data key="d3">703</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat1.yml", "line": 214, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 48, "column": 3, "includer_location": null}}</data>
+</node>
+<edge source="34" target="695">
+  <data key="d15">USE</data>
+  <data key="d16">34-695-0</data>
+</edge>
+<edge source="35" target="34">
+  <data key="d15">DEF</data>
+  <data key="d16">35-34-0</data>
+</edge>
+<edge source="36" target="695">
+  <data key="d15">USE</data>
+  <data key="d16">36-695-0</data>
+</edge>
+<edge source="37" target="36">
+  <data key="d15">DEF</data>
+  <data key="d16">37-36-0</data>
+</edge>
+<edge source="686" target="697">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">686-697-0</data>
+</edge>
+<edge source="689" target="686">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">689-686-0</data>
+</edge>
+<edge source="689" target="697">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">689-697-0</data>
+</edge>
+<edge source="694" target="703">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">694-703-0</data>
+</edge>
+<edge source="695" target="696">
+  <data key="d15">DEF</data>
+  <data key="d16">695-696-0</data>
+</edge>
+<edge source="696" target="697">
+  <data key="d15">USE</data>
+  <data key="d16">696-697-0</data>
+</edge>
+<edge source="697" target="694">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">697-694-0</data>
+</edge>
+<edge source="697" target="703">
+  <data key="d15">ORDER</data>
+  <data key="d17">false</data>
+  <data key="d18">false</data>
+  <data key="d16">697-703-0</data>
+</edge>
+<edge source="698" target="694">
+  <data key="d15">KEYWORD</data>
+  <data key="d19">"args.state"</data>
+  <data key="d16">698-694-0</data>
+</edge>
+<edge source="699" target="694">
+  <data key="d15">KEYWORD</data>
+  <data key="d19">"args.policy"</data>
+  <data key="d16">699-694-0</data>
+</edge>
+</graph></graphml>

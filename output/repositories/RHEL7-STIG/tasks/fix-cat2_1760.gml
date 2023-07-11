@@ -24,121 +24,93 @@
 <node id="1760">
   <data key="d2">Task</data>
   <data key="d3">1760</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 301, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
-  <data key="d5">"ansible.builtin.lineinfile"</data>
-  <data key="d6">"MEDIUM | RHEL-07-010140 | PATCH | The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed or new passwords are assigned, the new password must contain at least one numeric character."</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1862, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
+  <data key="d5">"lineinfile"</data>
+  <data key="d6">"MEDIUM | RHEL-07-040330 | PATCH | The SSH daemon must not allow authentication using RSA rhosts authentication."</data>
 </node>
 <node id="1761">
   <data key="d2">Expression</data>
   <data key="d3">1761</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 309, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
-  <data key="d7">"rhel_07_010140"</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1869, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
+  <data key="d7">"rhel_07_040330"</data>
   <data key="d8">[]</data>
 </node>
 <node id="1762">
   <data key="d2">IntermediateValue</data>
   <data key="d3">1762</data>
-  <data key="d9">204</data>
+  <data key="d9">221</data>
 </node>
 <node id="1763">
   <data key="d2">Conditional</data>
   <data key="d3">1763</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 309, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1869, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
 </node>
 <node id="1764">
   <data key="d2">Literal</data>
   <data key="d3">1764</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
-  <data key="d10">"bool"</data>
-  <data key="d11">true</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1864, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
+  <data key="d10">"str"</data>
+  <data key="d11">"/etc/ssh/sshd_config"</data>
 </node>
 <node id="1765">
   <data key="d2">Literal</data>
   <data key="d3">1765</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 304, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1865, "column": 15, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
   <data key="d10">"str"</data>
-  <data key="d11">"/etc/security/pwquality.conf"</data>
+  <data key="d11">"^#?RhostsRSAAuthentication"</data>
 </node>
 <node id="1766">
   <data key="d2">Literal</data>
   <data key="d3">1766</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 305, "column": 15, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1866, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
   <data key="d10">"str"</data>
-  <data key="d11">"^#?\\s*dcredit"</data>
+  <data key="d11">"RhostsRSAAuthentication no"</data>
 </node>
 <node id="1767">
-  <data key="d2">Expression</data>
-  <data key="d3">1767</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 306, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
-  <data key="d7">"dcredit = {{ rhel7stig_password_complexity.dcredit | default('-1') }}"</data>
-  <data key="d8">[]</data>
-</node>
-<node id="1768">
-  <data key="d2">IntermediateValue</data>
-  <data key="d3">1768</data>
-  <data key="d9">205</data>
-</node>
-<node id="1769">
   <data key="d2">Literal</data>
-  <data key="d3">1769</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
-  <data key="d10">"int"</data>
-  <data key="d11">420</data>
+  <data key="d3">1767</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1867, "column": 17, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
+  <data key="d10">"str"</data>
+  <data key="d11">"sshd -t -f %s"</data>
 </node>
-<node id="1773">
+<node id="1771">
   <data key="d2">Conditional</data>
-  <data key="d3">1773</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 326, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
+  <data key="d3">1771</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1885, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
 </node>
-<node id="625">
+<node id="1751">
+  <data key="d2">Task</data>
+  <data key="d3">1751</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1845, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
+  <data key="d5">"lineinfile"</data>
+  <data key="d6">"MEDIUM | RHEL-07-040320 | PATCH | All network connections associated with SSH traffic must terminate at the end of the session or after 10 minutes of inactivity, except to fulfill documented and validated mission requirements."</data>
+</node>
+<node id="1754">
+  <data key="d2">Conditional</data>
+  <data key="d3">1754</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 1853, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 56, "column": 3, "includer_location": null}}</data>
+</node>
+<node id="380">
   <data key="d2">Variable</data>
-  <data key="d3">625</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 546, "column": 1, "includer_location": null}</data>
-  <data key="d6">"rhel7stig_password_complexity"</data>
+  <data key="d3">380</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 200, "column": 1, "includer_location": null}</data>
+  <data key="d6">"rhel_07_040330"</data>
   <data key="d12">0</data>
   <data key="d13">0</data>
   <data key="d14">1</data>
 </node>
-<node id="626">
+<node id="381">
   <data key="d2">Literal</data>
-  <data key="d3">626</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 547, "column": 5, "includer_location": null}</data>
-  <data key="d10">"dict"</data>
-  <data key="d11">"{'ucredit': -1, 'lcredit': -1, 'dcredit': -1, 'ocredit': -1, 'difok': 8, 'minclass': 4, 'maxrepeat': 3, 'maxclassrepeat': 4, 'minlen': 15}"</data>
-</node>
-<node id="1750">
-  <data key="d2">Task</data>
-  <data key="d3">1750</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 283, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
-  <data key="d5">"ansible.builtin.lineinfile"</data>
-  <data key="d6">"MEDIUM | RHEL-07-010130 | PATCH | The Red Hat Enterprise Linux operating system must be configured so that when passwords are changed or new passwords are established, the new password must contain at least one lower-case character."</data>
-</node>
-<node id="119">
-  <data key="d2">Literal</data>
-  <data key="d3">119</data>
+  <data key="d3">381</data>
   <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
   <data key="d10">"bool"</data>
   <data key="d11">true</data>
 </node>
-<node id="118">
-  <data key="d2">Variable</data>
-  <data key="d3">118</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/defaults/main.yml", "line": 128, "column": 1, "includer_location": null}</data>
-  <data key="d6">"rhel_07_010140"</data>
-  <data key="d12">0</data>
-  <data key="d13">0</data>
-  <data key="d14">1</data>
-</node>
-<node id="1753">
-  <data key="d2">Conditional</data>
-  <data key="d3">1753</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/fix-cat2.yml", "line": 291, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/tasks/main.yml", "line": 95, "column": 3, "includer_location": null}}</data>
-</node>
-<edge source="1760" target="1773">
+<edge source="1760" target="1771">
   <data key="d15">ORDER</data>
   <data key="d16">false</data>
   <data key="d17">false</data>
-  <data key="d18">1760-1773-0</data>
+  <data key="d18">1760-1771-0</data>
 </edge>
 <edge source="1761" target="1762">
   <data key="d15">DEF</data>
@@ -154,73 +126,56 @@
   <data key="d17">false</data>
   <data key="d18">1763-1760-0</data>
 </edge>
-<edge source="1763" target="1773">
+<edge source="1763" target="1771">
   <data key="d15">ORDER</data>
   <data key="d16">false</data>
   <data key="d17">false</data>
-  <data key="d18">1763-1773-0</data>
+  <data key="d18">1763-1771-0</data>
 </edge>
 <edge source="1764" target="1760">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.create"</data>
+  <data key="d19">"args.dest"</data>
   <data key="d18">1764-1760-0</data>
 </edge>
 <edge source="1765" target="1760">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.dest"</data>
+  <data key="d19">"args.regexp"</data>
   <data key="d18">1765-1760-0</data>
 </edge>
 <edge source="1766" target="1760">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.regexp"</data>
+  <data key="d19">"args.line"</data>
   <data key="d18">1766-1760-0</data>
 </edge>
-<edge source="1767" target="1768">
-  <data key="d15">DEF</data>
-  <data key="d18">1767-1768-0</data>
-</edge>
-<edge source="1768" target="1760">
+<edge source="1767" target="1760">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.line"</data>
-  <data key="d18">1768-1760-0</data>
+  <data key="d19">"args.validate"</data>
+  <data key="d18">1767-1760-0</data>
 </edge>
-<edge source="1769" target="1760">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.mode"</data>
-  <data key="d18">1769-1760-0</data>
+<edge source="1751" target="1763">
+  <data key="d15">ORDER</data>
+  <data key="d16">false</data>
+  <data key="d17">false</data>
+  <data key="d18">1751-1763-0</data>
 </edge>
-<edge source="625" target="1767">
+<edge source="1754" target="1751">
+  <data key="d15">ORDER</data>
+  <data key="d16">false</data>
+  <data key="d17">false</data>
+  <data key="d18">1754-1751-0</data>
+</edge>
+<edge source="1754" target="1763">
+  <data key="d15">ORDER</data>
+  <data key="d16">false</data>
+  <data key="d17">false</data>
+  <data key="d18">1754-1763-0</data>
+</edge>
+<edge source="380" target="1761">
   <data key="d15">USE</data>
-  <data key="d18">625-1767-0</data>
+  <data key="d18">380-1761-0</data>
 </edge>
-<edge source="626" target="625">
+<edge source="381" target="380">
   <data key="d15">DEF</data>
-  <data key="d18">626-625-0</data>
-</edge>
-<edge source="1750" target="1763">
-  <data key="d15">ORDER</data>
-  <data key="d16">false</data>
-  <data key="d17">false</data>
-  <data key="d18">1750-1763-0</data>
-</edge>
-<edge source="119" target="118">
-  <data key="d15">DEF</data>
-  <data key="d18">119-118-0</data>
-</edge>
-<edge source="118" target="1761">
-  <data key="d15">USE</data>
-  <data key="d18">118-1761-0</data>
-</edge>
-<edge source="1753" target="1750">
-  <data key="d15">ORDER</data>
-  <data key="d16">false</data>
-  <data key="d17">false</data>
-  <data key="d18">1753-1750-0</data>
-</edge>
-<edge source="1753" target="1763">
-  <data key="d15">ORDER</data>
-  <data key="d16">false</data>
-  <data key="d17">false</data>
-  <data key="d18">1753-1763-0</data>
+  <data key="d18">381-380-0</data>
 </edge>
 </graph></graphml>

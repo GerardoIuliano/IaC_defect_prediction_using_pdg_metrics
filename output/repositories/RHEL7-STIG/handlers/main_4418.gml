@@ -22,7 +22,7 @@
 <node id="4418">
   <data key="d2">Task</data>
   <data key="d3">4418</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/handlers/main.yml", "line": 64, "column": 3, "includer_location": null}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/handlers/main.yml", "line": 64, "column": 3, "includer_location": null}</data>
   <data key="d5">"ansible.builtin.shell"</data>
   <data key="d6">"rebuild initramfs"</data>
 </node>
@@ -44,7 +44,7 @@
 <node id="4413">
   <data key="d2">Task</data>
   <data key="d3">4413</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/RHEL7-STIG/handlers/main.yml", "line": 59, "column": 3, "includer_location": null}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/RHEL7-STIG/handlers/main.yml", "line": 59, "column": 3, "includer_location": null}</data>
   <data key="d5">"ansible.builtin.shell"</data>
   <data key="d6">"restart auditd"</data>
 </node>

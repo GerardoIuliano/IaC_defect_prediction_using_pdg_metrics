@@ -3,21 +3,19 @@ import csv
 
 def save(metrics: dict):
     data = pd.read_csv('./output/ansible.csv')
-    """ 
+    
     data = data[data['repository'] == metrics["gitRepository"]]
     data = data[data['commit'] == metrics["commit"]]
     row = data[data['filepath'] == metrics["filepath"]] 
-    """
-    data = data[data['repository'] == "ansible-lockdown/RHEL7-STIG"]
-    data = data[data['commit'] == "d5aec06ca9f596671d14278e914ebe0b5508bb5a"]
-    row = data[data['filepath'] == "tasks/main.yml"]
 
     if(row.empty):
         print("Row in cui aggiungere pdg metrics non trovata. Non tutti i file dello studio precedente contengono task o vengono estratti dal tool.")
-    else:
-        print(row.index)
-        indice_riga = int(row.index.values)
+        print("Repository", metrics["gitRepository"], "Commit", metrics["commit"], "File", metrics["filepath"])
 
+    else:
+        indice_riga = int(row.index.values)
+        #aumento di 1 l'indice della riga in quanto non è compresa l'intestazione
+        indice_riga = indice_riga + 1
         # Resto nel dizionario solo le metriche
         del metrics["gitRepository"]
         del metrics["repository"]
@@ -47,26 +45,7 @@ def save(metrics: dict):
             
             righe[indice_riga] = riga_originale
         
-        with open('./output/ansible.csv', 'w', newline='') as file_modificato:
+        with open('./output/ansible.csv', 'w', newline='\n') as file_modificato:
             writer = csv.writer(file_modificato)
             writer.writerows(righe)
-
-metriche = {}
-
-metriche["gitRepository"]        = "repo/esempio"
-metriche["repository"]           = "repo"
-metriche["filepath"]             = "file/path"
-metriche["commit"]               = "c0mm1t"
-metriche["maxPdgVertices"]       = 11
-metriche["lackOfCohesion"]       = 11
-metriche["verticesCount"]        = 11
-metriche["edgesCount"]           = 11
-metriche["edgesToVerticesRatio"] = 11
-metriche["globalInput"]          = 11
-metriche["globalOutput"]         = 11
-metriche["indirectFanIn"]        = 11
-metriche["directFanOut"]         = 11
-metriche["indirectFanOut"]       = 11
-
-save(metriche)
         

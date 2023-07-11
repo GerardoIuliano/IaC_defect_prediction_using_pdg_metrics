@@ -18,86 +18,74 @@
 <key id="d0" for="graph" attr.name="role_name" attr.type="string"/>
 <graph edgedefault="directed"><data key="d0">{"path": "Ubuntu1804-CIS/tasks/prelim.yml", "id" : "752"}</data>
 <data key="d1">latest</data>
-<node id="747">
+<node id="748">
   <data key="d2">Task</data>
-  <data key="d3">747</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 81, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
-  <data key="d5">"command"</data>
-  <data key="d6">"PRELIM | Check if postfix package is installed"</data>
+  <data key="d3">748</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 202, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 18, "column": 3, "includer_location": null}}</data>
+  <data key="d5">"shell"</data>
+  <data key="d6">"PRELIM | Check for autofs service"</data>
 </node>
 <node id="752">
   <data key="d2">Task</data>
   <data key="d3">752</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 91, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 208, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 18, "column": 3, "includer_location": null}}</data>
   <data key="d5">"shell"</data>
-  <data key="d6">"PRELIM | Check for xinetd service"</data>
+  <data key="d6">"PRELIM | Check for rhnsd service"</data>
 </node>
 <node id="753">
   <data key="d2">Literal</data>
   <data key="d3">753</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 95, "column": 19, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 18, "column": 3, "includer_location": null}}</data>
   <data key="d7">"str"</data>
-  <data key="d8">"/bin/bash"</data>
+  <data key="d8">"systemctl show rhnsd | grep LoadState | cut -d = -f 2"</data>
 </node>
 <node id="754">
-  <data key="d2">Literal</data>
-  <data key="d3">754</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
-  <data key="d7">"str"</data>
-  <data key="d8">"set -o pipefail; systemctl show xinetd | grep LoadState | cut -d = -f 2"</data>
-</node>
-<node id="755">
   <data key="d2">Variable</data>
-  <data key="d3">755</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 96, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
-  <data key="d6">"xinetd_service_status"</data>
+  <data key="d3">754</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 210, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 18, "column": 3, "includer_location": null}}</data>
+  <data key="d6">"rhnsd_service_status"</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">18</data>
 </node>
-<node id="756">
+<node id="755">
   <data key="d2">Literal</data>
-  <data key="d3">756</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
+  <data key="d3">755</data>
+  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 18, "column": 3, "includer_location": null}}</data>
   <data key="d7">"bool"</data>
   <data key="d8">false</data>
 </node>
-<node id="757">
+<node id="756">
   <data key="d2">Task</data>
-  <data key="d3">757</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 100, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 19, "column": 3, "includer_location": null}}</data>
-  <data key="d5">"shell"</data>
-  <data key="d6">"PRELIM | Check for openbsd-inetd service"</data>
+  <data key="d3">756</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/prelim.yml", "line": 214, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 18, "column": 3, "includer_location": null}}</data>
+  <data key="d5">"stat"</data>
+  <data key="d6">"PRELIM | Check the grub configuration"</data>
 </node>
-<edge source="747" target="752">
+<edge source="748" target="752">
   <data key="d12">ORDER</data>
   <data key="d13">false</data>
   <data key="d14">false</data>
-  <data key="d15">747-752-0</data>
+  <data key="d15">748-752-0</data>
 </edge>
-<edge source="752" target="755">
+<edge source="752" target="754">
   <data key="d12">DEF</data>
-  <data key="d15">752-755-0</data>
+  <data key="d15">752-754-0</data>
 </edge>
-<edge source="752" target="757">
+<edge source="752" target="756">
   <data key="d12">ORDER</data>
   <data key="d13">false</data>
   <data key="d14">false</data>
-  <data key="d15">752-757-0</data>
+  <data key="d15">752-756-0</data>
 </edge>
 <edge source="753" target="752">
   <data key="d12">KEYWORD</data>
-  <data key="d16">"args.executable"</data>
+  <data key="d16">"args._raw_params"</data>
   <data key="d15">753-752-0</data>
 </edge>
-<edge source="754" target="752">
-  <data key="d12">KEYWORD</data>
-  <data key="d16">"args._raw_params"</data>
-  <data key="d15">754-752-0</data>
-</edge>
-<edge source="756" target="752">
+<edge source="755" target="752">
   <data key="d12">KEYWORD</data>
   <data key="d16">"check_mode"</data>
-  <data key="d15">756-752-0</data>
+  <data key="d15">755-752-0</data>
 </edge>
 </graph></graphml>

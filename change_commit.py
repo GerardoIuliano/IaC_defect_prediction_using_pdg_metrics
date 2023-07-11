@@ -10,14 +10,22 @@ def first_commit_checkout_all_repo():
     repo_cloned = repo_cloned.split(",")
     repo_cloned.sort()
     data = pd.read_csv('./input/ansible.csv')
+    isCheckout = {}
+
     for repoName in repo_cloned:
         sub_data = data[data["repository"]==REPO_DICTIONARY[repoName]]
         sub_data.sort_values(by="committed_at")
         first_row = sub_data.head(1)
         first_commit = first_row["commit"].values
         repository = git.Repo(r"./input/repositories/"+repoName)
-        print(repository.head.commit)
-        #repository.git.checkout(first_commit)
+        print("Checkout ",repoName, "at commit ", first_commit[0])
+        try:
+            repository.git.checkout(first_commit[0])
+            isCheckout[repoName] = True
+        except git.exc.GitCommandError as e:
+            isCheckout[repoName] = False
+    return isCheckout
+            
 
 def next_commit_checkout_all_repo():
     REPO_DICTIONARY = pp.getRepoDictionary()
@@ -42,8 +50,11 @@ def next_commit_checkout_all_repo():
         if (next_index <= len(commit_list)-1):
             next_commit = commit_list[next_index]
             repository = git.Repo(r"./input/repositories/"+repoName)
-            #repository.git.checkout(next_commit)
-            isCheckout[repoName] = True
+            try:
+                repository.git.checkout(next_commit) #verificare next_commit valore
+                isCheckout[repoName] = True
+            except git.exc.GitCommandError as e:
+                isCheckout[repoName] = False
         else:   
             isCheckout[repoName] = False
     return isCheckout

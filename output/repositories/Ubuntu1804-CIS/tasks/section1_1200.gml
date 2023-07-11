@@ -21,143 +21,88 @@
 <key id="d0" for="graph" attr.name="role_name" attr.type="string"/>
 <graph edgedefault="directed"><data key="d0">{"path": "Ubuntu1804-CIS/tasks/section1.yml", "id" : "1200"}</data>
 <data key="d1">latest</data>
-<node id="1188">
-  <data key="d2">Task</data>
-  <data key="d3">1188</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 528, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
-  <data key="d5">"service"</data>
-  <data key="d6">"SCORED | 1.1.22 | PATCH | Disable Automounting"</data>
-</node>
-<node id="1191">
-  <data key="d2">Conditional</data>
-  <data key="d3">1191</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 533, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
-</node>
 <node id="1194">
-  <data key="d2">Conditional</data>
+  <data key="d2">Task</data>
   <data key="d3">1194</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 534, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 831, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}}</data>
+  <data key="d5">"template"</data>
+  <data key="d6">"NOTSCORED | 1.7.1.2 | PATCH | Ensure local login warning banner is configured properly"</data>
 </node>
 <node id="1197">
   <data key="d2">Conditional</data>
   <data key="d3">1197</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 535, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 836, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}}</data>
 </node>
 <node id="1200">
   <data key="d2">Task</data>
   <data key="d3">1200</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 542, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
-  <data key="d5">"lineinfile"</data>
-  <data key="d6">"SCORED | 1.1.23 | PATCH | Disable USB Storage"</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 844, "column": 3, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}}</data>
+  <data key="d5">"template"</data>
+  <data key="d6">"NOTSCORED | 1.7.1.3 | PATCH | Ensure remote login warning banner is configured properly"</data>
 </node>
 <node id="1201">
   <data key="d2">Expression</data>
   <data key="d3">1201</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 550, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
-  <data key="d7">"ubuntu1804cis_rule_1_1_23"</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 849, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}}</data>
+  <data key="d7">"ubuntu1804cis_rule_1_7_1_3"</data>
   <data key="d8">[]</data>
 </node>
 <node id="1202">
   <data key="d2">IntermediateValue</data>
   <data key="d3">1202</data>
-  <data key="d9">55</data>
+  <data key="d9">85</data>
 </node>
 <node id="1203">
   <data key="d2">Conditional</data>
   <data key="d3">1203</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 550, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 849, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}}</data>
 </node>
 <node id="1204">
   <data key="d2">Literal</data>
   <data key="d3">1204</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 544, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 846, "column": 12, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}}</data>
   <data key="d10">"str"</data>
-  <data key="d11">"/etc/modprobe.d/CIS.conf"</data>
+  <data key="d11">"etc/issue.net.j2"</data>
 </node>
 <node id="1205">
   <data key="d2">Literal</data>
   <data key="d3">1205</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 545, "column": 15, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 847, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}}</data>
   <data key="d10">"str"</data>
-  <data key="d11">"^(#)?install usb-storage(\\s|$)"</data>
+  <data key="d11">"/etc/issue.net"</data>
 </node>
-<node id="1206">
-  <data key="d2">Literal</data>
-  <data key="d3">1206</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 546, "column": 13, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
-  <data key="d10">"str"</data>
-  <data key="d11">"install usb-storage /bin/true"</data>
+<node id="1209">
+  <data key="d2">Conditional</data>
+  <data key="d3">1209</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 865, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 24, "column": 3, "includer_location": null}}</data>
 </node>
-<node id="1207">
-  <data key="d2">Literal</data>
-  <data key="d3">1207</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 547, "column": 14, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
-  <data key="d10">"str"</data>
-  <data key="d11">"present"</data>
-</node>
-<node id="1208">
-  <data key="d2">Literal</data>
-  <data key="d3">1208</data>
-  <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
-  <data key="d10">"bool"</data>
-  <data key="d11">true</data>
-</node>
-<node id="80">
+<node id="122">
   <data key="d2">Variable</data>
-  <data key="d3">80</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/defaults/main.yml", "line": 53, "column": 1, "includer_location": null}</data>
-  <data key="d6">"ubuntu1804cis_rule_1_1_23"</data>
+  <data key="d3">122</data>
+  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/IaC_defect_prediction_using_pdg_metrics/input/repositories/Ubuntu1804-CIS/defaults/main.yml", "line": 72, "column": 1, "includer_location": null}</data>
+  <data key="d6">"ubuntu1804cis_rule_1_7_1_3"</data>
   <data key="d12">0</data>
   <data key="d13">0</data>
   <data key="d14">1</data>
 </node>
-<node id="1210">
-  <data key="d2">Conditional</data>
-  <data key="d3">1210</data>
-  <data key="d4">{"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/section1.yml", "line": 564, "column": 9, "includer_location": {"file": "/mnt/c/Users/gerar/Desktop/project-pdg_to_file-pdg/input/repositories/Ubuntu1804-CIS/tasks/main.yml", "line": 25, "column": 3, "includer_location": null}}</data>
-</node>
-<node id="81">
+<node id="123">
   <data key="d2">Literal</data>
-  <data key="d3">81</data>
+  <data key="d3">123</data>
   <data key="d4">{"file": "unknown file", "line": -1, "column": -1, "includer_location": null}</data>
   <data key="d10">"bool"</data>
   <data key="d11">true</data>
 </node>
-<edge source="1188" target="1203">
-  <data key="d15">ORDER</data>
-  <data key="d16">false</data>
-  <data key="d17">false</data>
-  <data key="d18">1188-1203-0</data>
-</edge>
-<edge source="1191" target="1194">
-  <data key="d15">ORDER</data>
-  <data key="d16">false</data>
-  <data key="d17">false</data>
-  <data key="d18">1191-1194-0</data>
-</edge>
-<edge source="1191" target="1203">
-  <data key="d15">ORDER</data>
-  <data key="d16">false</data>
-  <data key="d17">false</data>
-  <data key="d18">1191-1203-0</data>
-</edge>
-<edge source="1194" target="1197">
-  <data key="d15">ORDER</data>
-  <data key="d16">false</data>
-  <data key="d17">false</data>
-  <data key="d18">1194-1197-0</data>
-</edge>
 <edge source="1194" target="1203">
   <data key="d15">ORDER</data>
   <data key="d16">false</data>
   <data key="d17">false</data>
   <data key="d18">1194-1203-0</data>
 </edge>
-<edge source="1197" target="1188">
+<edge source="1197" target="1194">
   <data key="d15">ORDER</data>
   <data key="d16">false</data>
   <data key="d17">false</data>
-  <data key="d18">1197-1188-0</data>
+  <data key="d18">1197-1194-0</data>
 </edge>
 <edge source="1197" target="1203">
   <data key="d15">ORDER</data>
@@ -165,11 +110,11 @@
   <data key="d17">false</data>
   <data key="d18">1197-1203-0</data>
 </edge>
-<edge source="1200" target="1210">
+<edge source="1200" target="1209">
   <data key="d15">ORDER</data>
   <data key="d16">false</data>
   <data key="d17">false</data>
-  <data key="d18">1200-1210-0</data>
+  <data key="d18">1200-1209-0</data>
 </edge>
 <edge source="1201" target="1202">
   <data key="d15">DEF</data>
@@ -179,53 +124,34 @@
   <data key="d15">USE</data>
   <data key="d18">1202-1203-0</data>
 </edge>
-<edge source="1202" target="1210">
-  <data key="d15">USE</data>
-  <data key="d18">1202-1210-0</data>
-</edge>
 <edge source="1203" target="1200">
   <data key="d15">ORDER</data>
   <data key="d16">false</data>
   <data key="d17">false</data>
   <data key="d18">1203-1200-0</data>
 </edge>
-<edge source="1203" target="1210">
+<edge source="1203" target="1209">
   <data key="d15">ORDER</data>
   <data key="d16">false</data>
   <data key="d17">false</data>
-  <data key="d18">1203-1210-0</data>
+  <data key="d18">1203-1209-0</data>
 </edge>
 <edge source="1204" target="1200">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.dest"</data>
+  <data key="d19">"args.src"</data>
   <data key="d18">1204-1200-0</data>
 </edge>
 <edge source="1205" target="1200">
   <data key="d15">KEYWORD</data>
-  <data key="d19">"args.regexp"</data>
+  <data key="d19">"args.dest"</data>
   <data key="d18">1205-1200-0</data>
 </edge>
-<edge source="1206" target="1200">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.line"</data>
-  <data key="d18">1206-1200-0</data>
-</edge>
-<edge source="1207" target="1200">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.state"</data>
-  <data key="d18">1207-1200-0</data>
-</edge>
-<edge source="1208" target="1200">
-  <data key="d15">KEYWORD</data>
-  <data key="d19">"args.create"</data>
-  <data key="d18">1208-1200-0</data>
-</edge>
-<edge source="80" target="1201">
+<edge source="122" target="1201">
   <data key="d15">USE</data>
-  <data key="d18">80-1201-0</data>
+  <data key="d18">122-1201-0</data>
 </edge>
-<edge source="81" target="80">
+<edge source="123" target="122">
   <data key="d15">DEF</data>
-  <data key="d18">81-80-0</data>
+  <data key="d18">123-122-0</data>
 </edge>
 </graph></graphml>

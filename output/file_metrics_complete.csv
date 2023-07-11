@@ -1,8 +1,0 @@
-gitRepository,repository,file,taskCount,taskSize,taskIdentifier,taskCoverage,maxPdgVertices,lackOfCohesion,verticesCount,edgesCount,edgesToVerticesRatio,globalInput,globalOutput,directFanIn,indirectFanIn,directFanOut,indirectFanOut
-ansible-lockdown/RHEL7-STIG,RHEL7-STIG,tasks/main.yml,17,7.24,1.94,0.06,42,0,42,50,1.19,10,0,0,0,0,0
-ansible-lockdown/RHEL7-STIG,RHEL7-STIG,tasks/prelim.yml,24,18.38,3.42,0.04,33,0,5,4,0.8,1,0,0,0,0,0
-ansible-lockdown/RHEL7-STIG,RHEL7-STIG,tasks/parse_etc_passwd.yml,1,30.0,16.0,1.0,30,0,27,32,1.19,7,0,0,4,0,34
-ansible-lockdown/RHEL7-STIG,RHEL7-STIG,tasks/fix-cat1.yml,25,25.8,5.48,0.04,63,0,13,15,1.15,4,0,0,0,0,2
-ansible-lockdown/RHEL7-STIG,RHEL7-STIG,tasks/fix-cat2.yml,197,22.11,3.41,0.01,67,0,20,24,1.2,3,0,0,0,0,0
-ansible-lockdown/RHEL7-STIG,RHEL7-STIG,tasks/fix-cat3.yml,12,24.5,3.58,0.08,27,0,20,23,1.15,4,0,0,0,0,0
-ansible-lockdown/RHEL7-STIG,RHEL7-STIG,handlers/main.yml,18,4.94,2.0,0.06,30,0,9,8,0.89,3,0,0,0,0,0

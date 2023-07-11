@@ -7,19 +7,19 @@ import project_pdg_info as info
 
 def extract_file_metrics_from_repo(repoName):
     REPO_DICTIONARY = pp.getRepoDictionary()
+    list_file_metrics = list()
 
-    print("Repository:",repoName)
     dictionary = df.getDict__file_taskPDG(repoName)
     for playbook in dictionary.keys():
         setPDG = dictionary[playbook]
-        row = {}
-        row["gitRepository"] = REPO_DICTIONARY[repoName]
-        row["repository"] = repoName
-        row["filepath"] = playbook
-        row["commit"] = info.getCommit(repoName)
+        metric = {}
+        metric["gitRepository"] = REPO_DICTIONARY[repoName]
+        metric["repository"] = repoName
+        metric["filepath"] = playbook
+        metric["commit"] = info.getCommit(repoName).hexsha
 
-        row["maxPdgVertices"]   = round(mf.maxPdgVertices(setPDG)   , 2)
-        row["lackOfCohesion"]   = round(mf.lackOfCohesion(setPDG)   , 2)
+        metric["maxPdgVertices"]   = round(mf.maxPdgVertices(setPDG)   , 2)
+        metric["lackOfCohesion"]   = round(mf.lackOfCohesion(setPDG)   , 2)
         for pdg in setPDG:
             verticesCount        = round(mt.verticesCount(pdg), 2)
             edgesCount           = round(mt.edgesCount(pdg), 2)
@@ -30,17 +30,20 @@ def extract_file_metrics_from_repo(repoName):
             indirectFanIn        = round(mt.indirectFanIn(pdg,dictionary), 2)
             directFanOut         = round(mt.directFanOut(pdg,dictionary), 2)
             indirectFanOut       = round(mt.indirectFanOut(pdg,dictionary), 2) 
-        row["verticesCount"]        = verticesCount
-        row["edgesCount"]           = edgesCount
-        row["edgesToVerticesRatio"] = edgesToVerticesRatio
-        row["globalInput"]          = globalInput
-        row["globalOutput"]         = globalOutput
-        row["directFanIn"]          = directFanIn
-        row["indirectFanIn"]        = indirectFanIn
-        row["directFanOut"]         = directFanOut
-        row["indirectFanOut"]       = indirectFanOut
+        metric["verticesCount"]        = verticesCount
+        metric["edgesCount"]           = edgesCount
+        metric["edgesToVerticesRatio"] = edgesToVerticesRatio
+        metric["globalInput"]          = globalInput
+        metric["globalOutput"]         = globalOutput
+        metric["directFanIn"]          = directFanIn
+        metric["indirectFanIn"]        = indirectFanIn
+        metric["directFanOut"]         = directFanOut
+        metric["indirectFanOut"]       = indirectFanOut
 
-        return row
+        list_file_metrics.append(metric)
+
+    return list_file_metrics
+        
 
 
 
