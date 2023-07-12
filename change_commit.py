@@ -19,7 +19,7 @@ def first_commit_checkout_all_repo():
         first_row = sub_data.head(1)
         first_commit = first_row["commit"].values
         repository = git.Repo(os.path.join(os.getcwd(), "input", "repositories",repoName))
-        print("Checkout ",repoName, "at commit ", first_commit[0])
+        #print("Checkout ",repoName, "at commit ", first_commit[0])
         try:
             repository.git.checkout(first_commit[0])
             isCheckout[repoName] = True

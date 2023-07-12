@@ -55,7 +55,7 @@ def extract_pdg_task_level_from_repo(repoName):
                         1==1
 
                     destination = os.path.join(OUTPUT_DIR,dir_path,file_name+"_"+str(taskNodeId)+".gml")
-                    print("SAVING ---",dir_path+"\\"+file_name+"_"+str(taskNodeId)+".gml")
+                    #print("SAVING ---",dir_path+"\\"+file_name+"_"+str(taskNodeId)+".gml")
                     i=i+1
                     roleName = dir_path+"/"+file_name+".yml"
                     roleName = roleName.replace("\\", "/")

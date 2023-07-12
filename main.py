@@ -10,21 +10,24 @@ def main():
     isCheckout = commit.first_commit_checkout_all_repo()
 
     for repository in isCheckout.keys():
+        print("_____",repository,"_____")
         if(isCheckout[repository]):
             try:
                 if(info.is_repo_with_graph(repository)):
-                    print("PDG estratto:", repository)
+                    print("STEP 0: PDG extracted:", repository)
                     pdgTL.extract_pdg_task_level_from_repo(repository)
-                    print("PDGs task level estratti:", repository)
+                    print("STEP 1: PDGs task level extracted:", repository)
                     list_file_metrics = pdgFM.extract_file_metrics_from_repo(repository)
-                    print("Metriche estratte:", repository)
-                    repoCommit = list_file_metrics[0]["commit"]
+                    print("STEP 2: Metrics extracted:", repository)
+                    if(len(list_file_metrics)>0):
+                        repoCommit = list_file_metrics[0]["commit"]
                     for metrics in list_file_metrics:
                         sm.save(metrics=metrics)
-                    print("Metriche salvate")
-                    print("Repository", repository, "Commit", repoCommit)
+                    print("STEP 3: Metrics saved", repository)
+                    print("_____",repository,"-",repoCommit,"_____")
                 else:
-                    print("ProgramDependencyGraph non estratto dalla repository", repository)
+                    print("STEP 0: PDG not extracted:", repository)
+                    print("_____",repository,"_____")
             except:
                 traceback.print_exc()
 
