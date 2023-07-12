@@ -25,7 +25,6 @@ RUN pip install pandas
 # Installa gitpython
 RUN pip install gitpython
 
-COPY . /app
-WORKDIR /app
+COPY . .
 
-CMD python main.py
+CMD ["python", "main.py"]

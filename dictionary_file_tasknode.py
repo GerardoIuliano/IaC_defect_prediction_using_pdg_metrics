@@ -11,11 +11,11 @@ import json
 
 def getDict__file_tasknode(repositoryPath):
     repositoryName = repositoryPath[repositoryPath.rfind("/")+1:]
-    data = pd.read_csv('./input/ansible.csv')
+    data = pd.read_csv(os.path.join(os.getcwd(), "input", "ansible.csv"))
     rows = data[["filepath","repository"]]
     filepath = set(rows[rows.repository==repositoryPath].filepath)
-    rel_path = ".\\input\\repositories\\"
-    G = wr.read_graphml(rel_path+repositoryName+"\\PDG\\graphml.txt", node_type=int)
+    path = os.path.join(os.getcwd(), "input", "repositories", repositoryName, "PDG", "graphml.txt")
+    G = wr.read_graphml(path, node_type=int)
     dict_file_node = {}
     for i in range(0,len(G.nodes)):
         try:

@@ -1,8 +1,9 @@
 import pandas as pd
 import csv
+import os
 
 def save(metrics: dict):
-    data = pd.read_csv('./output/ansible.csv')
+    data = pd.read_csv(os.path.join(os.getcwd(), "output", "ansible.csv"))
     
     data = data[data['repository'] == metrics["gitRepository"]]
     data = data[data['commit'] == metrics["commit"]]
@@ -23,7 +24,7 @@ def save(metrics: dict):
         del metrics["filepath"]
 
         # Recupero la riga originale e aggiungo le metriche calcolate nelle apposite colonne
-        with open('./output/ansible.csv', 'r') as file_originale:
+        with open(os.path.join(os.getcwd(), "output", "ansible.csv"), 'r') as file_originale:
             reader = csv.reader(file_originale)
             righe = list(reader)
             
@@ -45,7 +46,7 @@ def save(metrics: dict):
             
             righe[indice_riga] = riga_originale
         
-        with open('./output/ansible.csv', 'w', newline='\n') as file_modificato:
+        with open(os.path.join(os.getcwd(), "output", "ansible.csv"), 'w', newline='\n') as file_modificato:
             writer = csv.writer(file_modificato)
             writer.writerows(righe)
         

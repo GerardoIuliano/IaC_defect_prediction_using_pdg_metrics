@@ -3,6 +3,7 @@ import extract_file_metrics as pdgFM
 import project_pdg_info as info
 import save_file_metrics as sm
 import change_commit as commit
+import os
 import traceback
 
 def main():
@@ -12,11 +13,11 @@ def main():
         if(isCheckout[repository]):
             try:
                 if(info.is_repo_with_graph(repository)):
-                    print("ProgramDependencyGraph estratto dalla repository:", repository)
+                    print("PDG estratto:", repository)
                     pdgTL.extract_pdg_task_level_from_repo(repository)
-                    print("ProgramDependencyGraphs task level estratti dalla repository:", repository)
+                    print("PDGs task level estratti:", repository)
                     list_file_metrics = pdgFM.extract_file_metrics_from_repo(repository)
-                    print("Metriche file level estratte dalla repository:", repository)
+                    print("Metriche estratte:", repository)
                     repoCommit = list_file_metrics[0]["commit"]
                     for metrics in list_file_metrics:
                         sm.save(metrics=metrics)
