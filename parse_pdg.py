@@ -3,7 +3,7 @@ import re
 import os
 
 def getRepoDictionary():
-    data = pd.read_csv(os.path.join(os.getcwd(), "input", "ansible.csv"))
+    data = pd.read_csv(os.path.normpath(os.path.join(os.getcwd(), "input", "ansible.csv")))
     repositories = data.repository
     repositories = set(repositories)
     githubName_repoName = repositories

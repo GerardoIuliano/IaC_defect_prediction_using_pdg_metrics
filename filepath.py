@@ -3,7 +3,7 @@ import re
 import os
 
 def getAllFilesPaths():
-    data = pd.read_csv(os.path.join(os.getcwd(), "input", "ansible.csv"))
+    data = pd.read_csv(os.path.normpath(os.path.join(os.getcwd(), "input", "ansible.csv")))
 
     repositories = data.repository
     files = data.filepath
@@ -18,7 +18,7 @@ def getAllFilesPaths():
     return file_path
 
 def getFilesFromRepo(repository_value):
-    data = pd.read_csv(os.path.join(os.getcwd(), "input", "ansible.csv"), index_col=False)
+    data = pd.read_csv(os.path.normpath(os.path.join(os.getcwd(), "input", "ansible.csv")), index_col=False)
     rows = data[data['repository'] == repository_value]
     return list(set(rows.filepath))    
 

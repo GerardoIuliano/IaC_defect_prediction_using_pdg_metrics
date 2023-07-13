@@ -38,8 +38,7 @@ def taskCount(PDG_list):
     role = pdg.graph["role_name"]
     role = json.loads(role)
     filePath = role["path"]
-    path = "./input/repositories/"+filePath
-    path = path.replace("/","\\")
+    path = os.path.normpath(os.path.join(os.getcwd(), "input", "repositories", filePath)) 
     return count_ansible_tasks(path)
 
 """ 
@@ -75,8 +74,7 @@ def taskSize(PDG_list):
     role = pdg.graph["role_name"]
     role = json.loads(role)
     filePath = role["path"]
-    path = "./input/repositories/"+filePath
-    path = path.replace("/","\\")
+    path = os.path.normpath(os.path.join(os.getcwd(), "input", "repositories", filePath)) 
 
     k = taskCount(PDG_list)
     if(k == 0):
@@ -102,8 +100,7 @@ def taskCoverage(PDG_list):
     role = pdg.graph["role_name"]
     role = json.loads(role)
     filePath = role["path"]
-    path = "./input/repositories/"+filePath
-    path = path.replace("/","\\")
+    path = os.path.normpath(os.path.join(os.getcwd(), "input", "repositories", filePath)) 
 
     taskSizes = taskSize(PDG_list)
     playbookLOC = count_loc_ansible_playbook(path)

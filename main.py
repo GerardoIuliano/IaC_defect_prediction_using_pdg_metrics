@@ -10,6 +10,7 @@ def main():
     isCheckout = commit.first_commit_checkout_all_repo()
 
     for repository in isCheckout.keys():
+        print("\n \n")
         print("_____",repository,"_____")
         if(isCheckout[repository]):
             try:
@@ -21,6 +22,8 @@ def main():
                     print("STEP 2: Metrics extracted:", repository)
                     if(len(list_file_metrics)>0):
                         repoCommit = list_file_metrics[0]["commit"]
+                    else:
+                        repoCommit = "no file to extract metrics"
                     for metrics in list_file_metrics:
                         sm.save(metrics=metrics)
                     print("STEP 3: Metrics saved", repository)
@@ -30,7 +33,9 @@ def main():
                     print("_____",repository,"_____")
             except:
                 traceback.print_exc()
-
+        else:
+            print("STEP 0: Checkout failed")
+            print("_____",repository,"_____")
 
 if __name__ == "__main__":
     main()

@@ -13,9 +13,9 @@ def repo_with_graph(graph_name):
     repo_cloned = repo_cloned.split(",")
     repo_cloned.sort()
     for repo in repo_cloned:
-        abs_repo_path = os.path.join(os.path.join(os.getcwd(), "input", "repositories", repo, "PDG")) 
-        if(os.path.exists(os.path.join(abs_repo_path,graph_name+".txt"))):
-            if(os.path.getsize(os.path.join(abs_repo_path,graph_name+".txt")) > 100):
+        abs_repo_path = os.path.normpath(os.path.join(os.getcwd(), "input", "repositories", repo, "PDG")) 
+        if(os.path.exists(os.path.normpath(os.path.join(abs_repo_path,graph_name+".txt")))):
+            if(os.path.getsize(os.path.normpath(os.path.join(abs_repo_path,graph_name+".txt"))) > 100):
                 pdg_good_repos.append(repo)
             else:
                 pdg_error_repos.append(repo)  
@@ -29,16 +29,16 @@ def is_repo_with_graph(repoName):
         return False
 
 def getPDG(repoName):
-    path = os.path.join(os.getcwd(), "input", "repositories", repoName, "PDG", "graphml.txt")
+    path = os.path.normpath(os.path.join(os.getcwd(), "input", "repositories", repoName, "PDG", "graphml.txt"))
     G = wr.read_graphml(path, node_type=int)
     return G
 
 def getTaskPDG(repoName, filePath, nodeId):
-    path = os.path.join(os.getcwd(), "output", "repositories", repoName, filePath+"_"+str(nodeId)+".gml")
+    path = os.path.normpath(os.path.join(os.getcwd(), "output", "repositories", repoName, filePath+"_"+str(nodeId)+".gml"))
     G = wr.read_graphml(path, node_type=int)
     return G
 
 def getCommit(repoName):
-    path = os.path.join(os.getcwd(), "input", "repositories", repoName)
+    path = os.path.normpath(os.path.join(os.getcwd(), "input", "repositories", repoName))
     repo = git.Repo(path)
     return repo.head.commit
