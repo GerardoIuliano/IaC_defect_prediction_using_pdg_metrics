@@ -42,7 +42,6 @@ def extract_pdg_task_level_from_repo(repoName):
                     ## salvo il sub-pdg
 
                     dir_path = filePath[0:filePath.rfind("/")]
-                    dir_path = dir_path.replace("/","\\")
 
                     file_name = filePath[filePath.rfind("/")+1:filePath.rfind(".")]
                     
@@ -50,7 +49,9 @@ def extract_pdg_task_level_from_repo(repoName):
                     # la cartella di destinazione segue lo stesso path del file .yml che contiene il task
                     # la directory tree viene mantenuta uguale a quella della repository di input
                     try:
-                        os.makedirs(OUTPUT_DIR+"/"+dir_path)
+                        path = os.path.normpath(os.path.join(OUTPUT_DIR,dir_path))
+                        os.makedirs(path)
+                        #os.makedirs(OUTPUT_DIR+"/"+dir_path)
                     except Exception as e:
                         1==1
 

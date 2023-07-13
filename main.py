@@ -5,6 +5,7 @@ import save_file_metrics as sm
 import change_commit as commit
 import os
 import traceback
+import time
 
 def main():
     isCheckout = commit.first_commit_checkout_all_repo()
@@ -18,6 +19,7 @@ def main():
                     print("STEP 0: PDG extracted:", repository)
                     pdgTL.extract_pdg_task_level_from_repo(repository)
                     print("STEP 1: PDGs task level extracted:", repository)
+                    time.sleep(5)
                     list_file_metrics = pdgFM.extract_file_metrics_from_repo(repository)
                     print("STEP 2: Metrics extracted:", repository)
                     if(len(list_file_metrics)>0):
