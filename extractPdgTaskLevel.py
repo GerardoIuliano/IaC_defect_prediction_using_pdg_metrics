@@ -8,19 +8,16 @@ import parse_pdg as pp
 import extract_task_subgraph as es
 import os
 
-## 139 repos
-## 80 good repos
-
-def extract_pdg_task_level_from_repo(repoName):
+def extract_pdg_task_level_from_repo(repository : str):
 
     OUTPUT_DIR = os.path.normpath(os.path.join(os.getcwd(), "output", "repositories"))
     FILES_PATH = fp.getAllFilesPaths()
     REPO_DICTIONARY = pp.getRepoDictionary()
 
-    repoPath=REPO_DICTIONARY[repoName]
+    repoPath=REPO_DICTIONARY[repository]
 
     ## Ottengo il PDG di una repository
-    PDG = pi.getPDG(repoName)
+    PDG = pi.getPDG(repository)
 
     ## Ottengo un dizionario che associa ad ogni file della repository la lista di task appartenenti a quel file
     dict_file_tasknode = df.getDict__file_tasknode(repoPath)
@@ -29,7 +26,7 @@ def extract_pdg_task_level_from_repo(repoName):
     if(len(dict_file_tasknode)>0):
         for file in dict_file_tasknode.keys():
             ##  file path example RHEL7-STIG/handlers/main.yml
-            filePath=repoName+"/"+file
+            filePath=repository+"/"+file
             if(filePath in FILES_PATH):
             
                 ## se il file è valido per lo studio recupero i nodi task del file

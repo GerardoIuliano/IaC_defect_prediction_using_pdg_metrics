@@ -5,18 +5,18 @@ import parse_pdg as pp
 import project_pdg_info as info
 
 
-def extract_file_metrics_from_repo(repoName):
+def extract_file_metrics_from_repo(repository : str):
     REPO_DICTIONARY = pp.getRepoDictionary()
     list_file_metrics = list()
 
-    dictionary = df.getDict__file_taskPDG(repoName)
+    dictionary = df.getDict__file_taskPDG(repository)
     for playbook in dictionary.keys():
         setPDG = dictionary[playbook]
         metric = {}
-        metric["gitRepository"] = REPO_DICTIONARY[repoName]
-        metric["repository"] = repoName
+        metric["gitRepository"] = REPO_DICTIONARY[repository]
+        metric["repository"] = repository
         metric["filepath"] = playbook
-        metric["commit"] = info.getCommit(repoName).hexsha
+        metric["commit"] = info.getCommit(repository).hexsha
 
         metric["maxPdgVertices"]   = round(mf.maxPdgVertices(setPDG)   , 2)
         metric["lackOfCohesion"]   = round(mf.lackOfCohesion(setPDG)   , 2)

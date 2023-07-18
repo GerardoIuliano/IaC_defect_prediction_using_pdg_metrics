@@ -8,7 +8,6 @@ import json
 
 ## associare ad ogni nodo task il file al quale appartiene
 ## map (file - node_id)
-
 def getDict__file_tasknode(repositoryPath):
     repositoryName = repositoryPath[repositoryPath.rfind("/")+1:]
     data = pd.read_csv(os.path.normpath(os.path.join(os.getcwd(), "input", "ansible.csv")))
@@ -47,10 +46,5 @@ def getDict__file_taskPDG(repositoryName):
             else:
                 dict_file_taskPDG[key] = [G]
     return dict_file_taskPDG
-
-
-## per ogni task appartenente ad un determinato file, estrarre il sub-pdg a livello del task
-
-## salvare in una cartella denominata con il nome del file tutti i pdg dei task appartenenti al file
  
 
