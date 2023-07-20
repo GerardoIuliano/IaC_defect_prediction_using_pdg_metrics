@@ -10,10 +10,14 @@ def extract_pdg_repository_level(repository : str):
     try:
         command = f'poetry run python -m scansible build-pdg -f graphml {repositories_path}'
         output_file = f'{repositories_path}/PDG/graphml.txt'
-        result = subprocess.run(command, shell=True, stdout = subprocess.PIPE)
+
+        result = subprocess.run(command, shell=True, capture_output=True, text=True)
+        output = result.stdout
+
         # Salva l'output su file
         with open(output_file, 'w') as file:
-            file.write(result.stdout.decode())
+            file.write(output)
+            
         return info.is_repo_with_graph(repository)
     except:
         traceback.print_exc()

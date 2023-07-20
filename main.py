@@ -10,17 +10,22 @@ import traceback
 def main():
     try:
         dizionario = info.dict_repository_commits()
-        tot_repo = len(dizionario.keys())
-        avanzamento = 0
+        tot_repos = len(dizionario.keys())
+        tot_commits = sum(len(valore) for valore in dizionario.values() if isinstance(valore, list))
+        avanzamento_repo = 0
+        avanzamento_commits = 0
+
         # ciclo sulle repository
         for repository in dizionario.keys():
-            avanzamento+=1
-            print("\n--- PROGRESSO:",(avanzamento*100/tot_repo),"% ---\n")
-            print("REPOSITORY: ", repository)
+            avanzamento_repo+=1
 
             # ciclo sui commits della repository
-            for commit in dizionario[repository]:               
-                print("COMMIT: ", commit)
+            for commit in dizionario[repository]: 
+                avanzamento_commits+=1
+
+                print("\n--- PROGRESSO REPOSITORY:",round((avanzamento_repo*100/tot_repos),1),"% ---")
+                print("--- PROGRESSO COMMITS:",round((avanzamento_commits*100/tot_commits),1),"% ---\n")
+                print("REPOSITORY: ", repository, "COMMIT: ", commit)
 
                 # rimuovo dalla repository di input il PDG estratto
                 cleaner.clean_repository(repository = repository)
@@ -50,9 +55,8 @@ def main():
                     list_file_metrics = pdgFM.extract_file_metrics_from_repo(repository = repository)
                     print("STEP 4: PASS")
                     
-                    # salvo le metriche
-                    for metrics in list_file_metrics:
-                            metric.save(metrics = metrics)
+                    # salvo le metriche    
+                    metric.save(list_dict_metric = list_file_metrics)
                     print("STEP 5: PASS")
                 else: 
                     print("STEP 2: FAIL")
