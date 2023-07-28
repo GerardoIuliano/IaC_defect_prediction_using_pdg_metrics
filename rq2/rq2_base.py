@@ -170,5 +170,6 @@ def train(X, y, method: str):
     )
 
 # Metrics to use                                                                                                               
-def pdg_metrics_only(df):
-    return df[['failure_prone', 'group','maxPdgVertices','lackOfCohesion','verticesCount','edgesCount','edgesToVerticesRatio','globalInput','globalOutput','directFanIn','indirectFanIn','directFanOut','indirectFanOut']]
+def pdg_metrics_only_RFE(df):
+    return df[['failure_prone', 'group',
+               'maxPdgVertices', 'verticesCount','edgesCount','edgesToVerticesRatio']]

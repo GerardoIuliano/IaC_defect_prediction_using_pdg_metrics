@@ -37,6 +37,8 @@ def best_predictors_pdg():
 
     rows = []
     for m in selected_metric.keys():
+        if(selected_metric[m]==0):
+            selected_metric[m]=1
         ranked_metric[m] = round(ranked_metric[m]/selected_metric[m],2)  
         row = []
         row.append(m) 
@@ -96,7 +98,9 @@ def best_predictors_iac():
     selected_metric = dict(sorted(selected_metric.items(), key=lambda item: item[1], reverse=True))
 
     rows = []
-    for m in selected_metric.keys():
+    for m in selected_metric.keys():#controllo divisione per zero
+        if(selected_metric[m]==0):
+            selected_metric[m]=1
         ranked_metric[m] = round(ranked_metric[m]/selected_metric[m],2)  
         row = []
         row.append(m) 
@@ -160,6 +164,8 @@ def best_predictors_delta():
 
     rows = []
     for m in selected_metric.keys():
+        if(selected_metric[m]==0):
+            selected_metric[m]=1
         ranked_metric[m] = round(ranked_metric[m]/selected_metric[m],2)  
         row = []
         row.append(m) 
@@ -216,6 +222,8 @@ def best_predictors_process():
 
     rows = []
     for m in selected_metric.keys():
+        if(selected_metric[m]==0):
+            selected_metric[m]=1
         ranked_metric[m] = round(ranked_metric[m]/selected_metric[m],2)  
         row = []
         row.append(m) 
@@ -235,3 +243,6 @@ def best_predictors_process():
         writer.writerows(rows)
 
 best_predictors_pdg()
+best_predictors_process()
+best_predictors_iac()
+best_predictors_delta()
