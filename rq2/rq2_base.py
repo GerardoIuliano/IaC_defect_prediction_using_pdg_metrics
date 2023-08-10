@@ -2,10 +2,11 @@ import numpy as np
 import pandas as pd
 
 from sklearn import ensemble, linear_model, naive_bayes, svm, tree
-from sklearn.feature_selection import VarianceThreshold
+from sklearn.feature_selection import VarianceThreshold, SelectFromModel
 from sklearn import metrics
 from sklearn import model_selection
-from sklearn import preprocessing 
+from sklearn import preprocessing
+from sklearn import feature_selection 
 
 from sklearn.utils import indexable
 from sklearn.utils.validation import _num_samples
@@ -13,8 +14,9 @@ from sklearn.utils.validation import _num_samples
 from imblearn.pipeline import Pipeline
 from imblearn.under_sampling import RandomUnderSampler
 from imblearn.over_sampling import RandomOverSampler
+from sklearn.model_selection import KFold
 
-
+import traceback
 
 #====================================================== Hyper-parameters ======================================================#
 #                                                                                                                              #
@@ -46,7 +48,7 @@ max_depth.append(None)
 
 random_forest_params = dict(
     clf__n_estimators = [int(x) for x in np.linspace(start = 100, stop = 2000, num = 10)],
-    clf__max_features = ['log2', 'sqrt'],
+    clf__max_features = ['auto', 'sqrt'],
     clf__max_depth = max_depth,
     clf__bootstrap = [True, False]
 )
@@ -74,9 +76,24 @@ estimators = dict(
     naive_bayes = naive_bayes.GaussianNB(),
     logistic = linear_model.LogisticRegression(),
     random_forest = ensemble.RandomForestClassifier(),
-    svc = svm.SVC()
+    svc = svm.SVC(probability=True)
 )
 
+estimators_rfe = dict(
+    decision_tree = tree.DecisionTreeClassifier(),
+    naive_bayes = ensemble.RandomForestClassifier(), #l'algoritmo naive_bayes non contiene la feature importance, quindi non è applicabile RFE 
+    logistic = linear_model.LogisticRegression(),
+    random_forest = ensemble.RandomForestClassifier(),
+    svc = svm.SVC(kernel='linear')
+)
+
+
+features_to_select = dict(
+    delta = 10,
+    process = 6,
+    iac = 16,
+    pdg = 4,
+)
 
 
 
@@ -135,7 +152,7 @@ scoring = dict(
     mcc = metrics.make_scorer(metrics.matthews_corrcoef)
 )
 
-def train(X, y, method: str):
+def train(X, y, method: str, metric_type : int):
     
     if method not in ('decision_tree', 'naive_bayes', 'logistic', 'random_forest', 'svc'):
         raise ValueError('Method not supported')
@@ -148,28 +165,70 @@ def train(X, y, method: str):
     X = X.drop(['group'], axis=1)
 
     # Remove constant features
-    selected_features_indices = VarianceThreshold(threshold=0).fit(X).get_support(indices=True)
-    X = X.iloc[:, selected_features_indices]
-    
+    try:
+        selected_features_indices = VarianceThreshold(threshold=0).fit(X).get_support(indices=True)
+        X = X.iloc[:, selected_features_indices]
+    except Exception as e:
+        traceback.print_exc()
+
     pipe = Pipeline([
-        ('bal', None), # To balance the training data See search_params['bal']
-        ('pre', None), # To scale (and center) data. See search_params['pre']
+        ('bal', _search_params["bal"][2]), # To balance the training data See search_params['bal']
+        ('pre', _search_params["pre"][0]), # To scale (and center) data. See search_params['pre']
+        ('rfe', feature_selection.RFE(estimator=estimators_rfe[method], n_features_to_select=features_to_select[metric_type])), 
         ('clf', estimators[method])
     ])
 
-    
-    search = model_selection.RandomizedSearchCV(pipe, _search_params, cv=walk_forward(X, y, groups), scoring=scoring, refit='pr_auc', verbose = 0)    
-    search.fit(X, y)
-    
-    # Model
-    return dict(
-        estimator=search.best_estimator_,
-        cv_results=search.cv_results_,
-        best_index=search.best_index_,
-        best_score=search.best_score_
-    )
+    json = {}
+    split = 0
+    for train_indices, test_indices in walk_forward(X, y, groups):
+        
+        X_train, y_train = X.iloc[train_indices], y.iloc[train_indices]
+        pipe.fit(X_train, y_train)
 
-# Metrics to use                                                                                                               
-def pdg_metrics_only_RFE(df):
-    return df[['failure_prone', 'group',
-               'maxPdgVertices', 'verticesCount','edgesCount','edgesToVerticesRatio']]
+        X_test, y_test = X.iloc[test_indices], y.iloc[test_indices]
+        y_pred = pipe.predict(X_test)
+        predicted_probabilities = pipe.predict_proba(X_test)[:, 1]
+        notXOR = (y_pred == y_test).astype(int)
+
+        json["split"+str(split)+"_index"]=test_indices.tolist()
+        json["split"+str(split)+"_pred"]=y_pred.tolist()
+        json["split"+str(split)+"_test"]=y_test.values.tolist()
+        json["split"+str(split)+"_notXOR"]=notXOR.values.tolist()
+        json["split"+str(split)+"_prob"]=predicted_probabilities.tolist()
+
+        split+=1
+
+    return json
+
+# pdg Metrics                                                                                                               
+def pdg_metrics_only(df):
+    return df[['failure_prone', 'group','maxPdgVertices', 'verticesCount','edgesCount','edgesToVerticesRatio','globalInput','globalOutput','directFanIn','indirectFanIn','directFanOut','indirectFanOut']]
+
+# IaC Metrics                                                                                                               
+def iac_metrics_only(df):
+    return df[['failure_prone', 'group','avg_play_size','avg_task_size','lines_blank','lines_code','lines_comment','num_authorized_key',
+               'num_block_error_handling','num_blocks','num_commands', 'num_conditions','num_decisions','num_deprecated_keywords',
+               'num_deprecated_modules','num_distinct_modules','num_external_modules','num_fact_modules', 'num_file_exists',
+               'num_file_mode','num_file_modules','num_filters','num_ignore_errors','num_import_playbook','num_import_role',
+               'num_import_tasks', 'num_include','num_include_role','num_include_tasks','num_include_vars','num_keys','num_lookups',
+               'num_loops','num_math_operations','num_names_with_vars', 'num_parameters','num_paths','num_plays','num_regex',
+               'num_roles','num_suspicious_comments','num_tasks','num_tokens','num_unique_names','num_prompts', 'num_vars','text_entropy']]
+
+# delta Metrics                                                                                                               
+def delta_metrics_only(df):
+    return df[['failure_prone', 'group','delta_avg_play_size','delta_avg_task_size','delta_lines_blank','delta_lines_code',
+               'delta_lines_comment','delta_num_authorized_key','delta_num_block_error_handling','delta_num_blocks','delta_num_commands',
+               'delta_num_conditions','delta_num_decisions','delta_num_deprecated_keywords','delta_num_deprecated_modules',
+               'delta_num_distinct_modules','delta_num_external_modules','delta_num_fact_modules','delta_num_file_exists',
+               'delta_num_file_mode','delta_num_file_modules','delta_num_filters','delta_num_ignore_errors','delta_num_import_playbook',
+               'delta_num_import_role','delta_num_import_tasks','delta_num_include','delta_num_include_role', 'delta_num_include_tasks',
+               'delta_num_include_vars','delta_num_keys','delta_num_lookups','delta_num_loops','delta_num_math_operations',
+               'delta_num_names_with_vars', 'delta_num_parameters','delta_num_paths','delta_num_plays','delta_num_regex',
+               'delta_num_roles','delta_num_suspicious_comments','delta_num_tasks','delta_num_tokens','delta_num_unique_names',
+               'delta_num_prompts', 'delta_num_vars','delta_text_entropy']]
+
+# process Metrics                                                                                                               
+def process_metrics_only(df):
+    return df[['failure_prone', 'group','change_set_avg', 'change_set_max', 'code_churn_count', 'code_churn_avg', 
+               'code_churn_max', 'commits_count', 'contributors_count', 'highest_contributor_experience', 'additions', 
+               'additions_avg', 'additions_max', 'deletions', 'deletions_avg', 'deletions_max', 'hunks_median', 'minor_contributors_count']]

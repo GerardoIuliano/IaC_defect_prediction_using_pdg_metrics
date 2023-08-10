@@ -1,15 +1,21 @@
-# If you want to ignore warings
 import warnings
 warnings.filterwarnings('ignore')
 
-import joblib
 import os
+import json
 import pandas as pd
-from rq2_base import train, pdg_metrics_only
+from rq2_base import train, pdg_metrics_only, delta_metrics_only, process_metrics_only, iac_metrics_only
 
-def rq2_analyze(repository : str):
+def rq2(repository : str, metric_type : str):
     data = pd.read_csv('kaggle/input/iac-defect-prediction-using-pdg-metrics/ansible.csv')
     data = data[data.repository == repository].fillna(0)
+
+    # Remove releases with only failure_prone equal 0 or 1
+    for commit in data.commit.unique():
+        tmp = data[data.commit == commit]
+        if tmp.failure_prone.to_list().count(0) == 0 or tmp.failure_prone.to_list().count(1) == 0:
+            indices = data[data.commit == commit].index
+            data.drop(indices, inplace=True)
 
     # Create column to group files belonging to the same release (identified by the commit hash)
     data['group'] = data.commit.astype('category').cat.rename_categories(range(1, data.commit.nunique()+1))
@@ -21,28 +27,29 @@ def rq2_analyze(repository : str):
     # Remove metadata columns but not 'group'
     data = data.drop(['commit', 'committed_at', 'filepath', 'repository'], axis=1)
 
-    # pdg metrics only 
-    data = pdg_metrics_only(data)
+    # metrics selection
+    if(metric_type == "pdg"):
+         data = pdg_metrics_only(data)
+    elif(metric_type == "delta"):
+         data = delta_metrics_only(data)
+    elif(metric_type == "process"):
+        data = process_metrics_only(data)
+    elif(metric_type == "iac"):
+         data = iac_metrics_only(data)
+    else:
+         raise("Error metric type not found")
+    
+    X, y = data.drop(['failure_prone'], axis=1), data.failure_prone
 
-    X, y = data.drop(['failure_prone'], axis=1), data.failure_prone.values.ravel()
+    if not(os.path.exists('rq2/result/'+metric_type+'/'+repository.replace("/","_"))):
+            os.makedirs('rq2/result/'+metric_type+'/'+repository.replace("/","_"))
 
-    csv_df = pd.DataFrame()
-    csv_df.to_csv('./performance.csv', index=False)
-
-    for method in ['naive_bayes', 'logistic', 'svc', 'decision_tree', 'random_forest']:
+    for method in ['naive_bayes','logistic', 'svc', 'decision_tree', 'random_forest']:
         print(f'Training a {method} classifier...')
-        model = train(X, y, method)
-
-        performance = pd.DataFrame(model["cv_results"]).iloc[[model["best_index"]]] # Take only the scores at the best index
-        performance['method'] = method
+        predict = train(X, y, method, metric_type=metric_type)
         
-        if not(os.path.exists('rq2/result/'+repository.replace("/","_"))):
-            os.makedirs("rq2/result/"+repository.replace("/","_"))
-        # Dump performance
-        csv_df = pd.concat([csv_df,performance], ignore_index=True)
-        csv_df.to_csv('rq2/result/'+repository.replace("/","_")+'/performance.csv', index=False)
-            
-        # Dump model
-        joblib.dump(model, f'rq2/result/'+repository.replace("/","_")+'/'+method+'.joblib')
+        with open('rq2/result/'+metric_type+'/'+repository.replace("/","_")+'/'+method+'.json', "w") as json_file:
+            json.dump(predict, json_file)
 
     print('Done')
+
