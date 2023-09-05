@@ -172,7 +172,7 @@ def train(X, y, method: str, metric_type : int):
         traceback.print_exc()
 
     pipe = Pipeline([
-        ('bal', _search_params["bal"][2]), # To balance the training data See search_params['bal']
+        ('bal', _search_params["bal"][0]), # To balance the training data See search_params['bal']
         ('pre', _search_params["pre"][0]), # To scale (and center) data. See search_params['pre']
         ('rfe', feature_selection.RFE(estimator=estimators_rfe[method], n_features_to_select=features_to_select[metric_type])), 
         ('clf', estimators[method])
