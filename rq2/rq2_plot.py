@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import os, pandas as pd
+import csv
 
 def boxplot_values(config : str):
 
@@ -85,4 +86,16 @@ def difference_table():
         df.loc[df["Classifier"] == classifier, f"{classifier} - {classifier}"] = 0
 
 
-difference_table()
+def performanceClassifiers(config : str):
+    data = pd.read_csv(os.path.normpath(os.path.join("rq2", "analysis", "analysis"+config, "analysis.csv")))
+    data = data[data["metric"]=="pdg"]
+    rows = []
+    for i in range(80):
+        i= i*20
+        rows.append([data["repository"][i], round(data["mcc"][i],2),round(data["mcc"][i+1],2),round(data["mcc"][i+2],2),round(data["mcc"][i+3],2),round(data["mcc"][i+4],2)])
+    with open("rq2/analysis/analysis"+config+"/repoAndClassifiers.csv", 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(rows)    
+    
+
+performanceClassifiers("_0_1")
