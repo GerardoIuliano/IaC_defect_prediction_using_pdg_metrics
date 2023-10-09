@@ -97,5 +97,28 @@ def performanceClassifiers(config : str):
             writer = csv.writer(file)
             writer.writerows(rows)    
     
+def performanceClassifiersAndRank(config : str):
+    data = pd.read_csv(os.path.normpath(os.path.join("rq2", "analysis", "analysis"+config, "analysis.csv")))
+    rank = pd.read_csv(os.path.normpath(os.path.join("rq2", "statistic", "statistic"+config, "nemenyi_rank_reverse.csv")))
+    data = data[data["metric"]=="pdg"]
+    rows = []
+    for i in range(80):
+        i= i*20
+        tmp = rank[rank["repository"]==data["repository"][i]]
+        nb = float(tmp[tmp["classifier"]=="naive_bayes"]["rank"].values)
+        lr = float(tmp[tmp["classifier"]=="logistic"]["rank"].values)
+        svc = float(tmp[tmp["classifier"]=="svc"]["rank"].values)
+        dt = float(tmp[tmp["classifier"]=="decision_tree"]["rank"].values)
+        rf = float(tmp[tmp["classifier"]=="random_forest"]["rank"].values)
+       
+        rows.append([data["repository"][i],
+                     str(round(data["mcc"][i],2))+" ("+str(nb)+")",
+                     str(round(data["mcc"][i+1],2))+" ("+str(lr)+")",
+                     str(round(data["mcc"][i+2],2))+" ("+str(svc)+")",
+                     str(round(data["mcc"][i+3],2))+" ("+str(dt)+")",
+                     str(round(data["mcc"][i+4],2))+" ("+str(rf)+")"])
+    with open("rq2/analysis/analysis"+config+"/repoAndClassifiersRank.csv", 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(rows)
 
-performanceClassifiers("_0_1")
+performanceClassifiersAndRank("_0_1")

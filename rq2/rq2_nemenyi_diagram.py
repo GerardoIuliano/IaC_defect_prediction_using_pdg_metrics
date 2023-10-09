@@ -20,7 +20,7 @@ def rank_project_classifiers(project : str):
     metrics = list(sorted_dict.keys())
     rows=[]
 
-    my_dict = {metrics[i]: ranked_list[i] for i in range(len(ranked_list))}
+    my_dict = {metrics[i]: 6-ranked_list[i] for i in range(len(ranked_list))}
     return my_dict
 
 def ranked_table2():
@@ -28,6 +28,11 @@ def ranked_table2():
     projects = data["repository"]
     projects = list(dict.fromkeys(projects))
     rows = []
+    avg_nb = 0
+    avg_lr = 0
+    avg_svc = 0
+    avg_dt = 0
+    avg_rf = 0
     for project in projects:
         rank = rank_project_classifiers(project=project)
         rows.append([project,"naive_bayes",rank["naive_bayes"]])
@@ -35,8 +40,17 @@ def ranked_table2():
         rows.append([project,"svc", rank["svc"],])
         rows.append([project, "decision_tree", rank["decision_tree"]])
         rows.append([project,"random_forest",rank["random_forest"]])
-        
-    with open("rq2/statistic/statistic_0_1/"+"nemenyi_rank.csv", mode='w', newline='') as file_csv:
+        avg_nb+=rank["naive_bayes"]
+        avg_lr+=rank["logistic"]
+        avg_svc+=rank["svc"]
+        avg_dt+=rank["decision_tree"]
+        avg_rf+=rank["random_forest"]
+    print(avg_nb/80)    
+    print(avg_lr/80)
+    print(avg_svc/80)
+    print(avg_dt/80)
+    print(avg_rf/80)
+    with open("rq2/statistic/statistic_0_1/"+"nemenyi_rank_reverse.csv", mode='w', newline='') as file_csv:
         writer = csv.writer(file_csv)
         writer.writerow(["repository", "classifier", "rank"])
         writer.writerows(rows)
@@ -69,7 +83,7 @@ def nemenyi_diagram():
 
 #-----------Da lanciare per rifare il diagramma--------------
 ranked_table2()
-nemenyi_diagram()
+#nemenyi_diagram()
 
 
 
