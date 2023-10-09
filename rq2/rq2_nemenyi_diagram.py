@@ -20,7 +20,7 @@ def rank_project_classifiers(project : str):
     metrics = list(sorted_dict.keys())
     rows=[]
 
-    my_dict = {metrics[i]: 6-ranked_list[i] for i in range(len(ranked_list))}
+    my_dict = {metrics[i]: ranked_list[i] for i in range(len(ranked_list))}
     return my_dict
 
 def ranked_table2():
@@ -61,10 +61,9 @@ def nemenyi_diagram():
 
     # export the diagram to a file
     diagram.to_file(
-        "rq4/statistic/nemenyi_diagram.tex",
+        "rq2/statistic/statistic_0_1/nemenyi_diagram.tex",
         alpha = .05,
         adjustment = "holm",
-        reverse_x = True,
         axis_options = {"title": "critdd"},
     )
 

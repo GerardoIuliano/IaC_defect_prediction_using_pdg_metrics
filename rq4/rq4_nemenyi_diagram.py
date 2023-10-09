@@ -7,8 +7,6 @@ from critdd import Diagram
 
 def rank_project_metrics(project : str):
     data = pd.read_csv(os.path.normpath(os.path.join("rq4", "analysis", "best_models_analysis.csv")))
-    projects = data["repository"]
-    projects = list(dict.fromkeys(projects))
 
     project_row = data[data["repository"]==project]
     mcc_dict ={
@@ -34,7 +32,7 @@ def rank_project_metrics(project : str):
     metrics = list(sorted_dict.keys())
     rows=[]
 
-    my_dict = {metrics[i]: 16-ranked_list[i] for i in range(len(ranked_list))}
+    my_dict = {metrics[i]: ranked_list[i] for i in range(len(ranked_list))}
     return my_dict
         
 def ranked_table():
@@ -108,11 +106,9 @@ def nemenyi_diagram():
         "rq4/statistic/nemenyi_diagram.tex",
         alpha = .05,
         adjustment = "holm",
-        reverse_x = True,
         axis_options = {"title": "critdd"},
     )
 
-#-----------Da lanciare per rifare il diagramma--------------
-#ranked_table2()
-#nemenyi_diagram()
+ranked_table2()
+nemenyi_diagram()
 
